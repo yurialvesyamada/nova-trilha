@@ -1,6 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
-import Rotas from './rotas';
-import Menu from './Components/Menu/menu';
+import Routes from './Rotas';
+import Menu from './Components/Menu/Menu';
 
 export default function App() {
   return (
@@ -10,7 +10,7 @@ export default function App() {
           <Menu />
         </header>
         <main>
-          <Rotas />
+          <Routes />
         </main>
 
       </div>
