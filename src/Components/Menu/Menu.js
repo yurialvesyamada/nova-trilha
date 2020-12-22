@@ -11,22 +11,22 @@ function BaseMenu(props) {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav activeKey={location.pathname} className="ml-auto mr-3">
                     <Nav.Item>
-                        <Nav.Link as={Link} href="/Home" to="/Home">Home</Nav.Link>
+                        <Nav.Link as={Link} href="/home" to="/home">Home</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link as={Link} href="/Vagas" to="/Vagas">Vagas</Nav.Link>
+                        <Nav.Link as={Link} href="/vagas" to="/vagas">Vagas</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link as={Link} href="/Login" to="/Login">Login</Nav.Link>
+                        <Nav.Link as={Link} href="/login" to="/login">Login</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link as={Link} href="/Cadastro" to="/Cadastro">Cadastro</Nav.Link>
+                        <Nav.Link as={Link} href="/cadastro" to="/cadastro">Cadastro</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link as={Link} href="/Recuperar-senha" to="/Recuperar-senha">Recuperar senha</Nav.Link>
+                        <Nav.Link as={Link} href="/recuperar-senha" to="/recuperar-senha">Recuperar senha</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link as={Link} href="/Parceiros" to="/Parceiros">Parceiros</Nav.Link>
+                        <Nav.Link as={Link} href="/parceiros" to="/parceiros">Parceiros</Nav.Link>
                     </Nav.Item>
                 </Nav>
             </Navbar.Collapse>

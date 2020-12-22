@@ -1,10 +1,10 @@
 import { Switch, Route } from 'react-router-dom';
-import Home from './Pages/home';
-import Vagas from './Pages/vagas';
-import Login from './Pages/login';
-import Cadastro from './Pages/cadastro';
-import Recuperar_login from './Pages/recuperar_login';
-import Parceiros from './Pages/parceiros';
+import Home from './Pages/Home';
+import Vagas from './Pages/Vagas';
+import Login from './Pages/Login';
+import Cadastro from './Pages/Cadastro';
+import Recuperar_login from './Pages/Recuperar_login';
+import Parceiros from './Pages/Parceiros';
 
 
 export default function Routes() {
