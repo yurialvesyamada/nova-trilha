@@ -5,8 +5,10 @@ import './Menu.css';
 function BaseMenu(props) {
     const { location } = props;
     return (
-        <Navbar className="navbar-dark" bg="primary" expand="lg">
-            <Navbar.Brand as={Link} to="/Home"></Navbar.Brand>
+        <Navbar className="navbar-dark py-3" bg="primary" expand="lg">
+            <Navbar.Brand as={Link} to="/Home">
+                <img src="/assets/img/nova-trilha-logo2.png" width="55px" title="&copy; Nova Trilha"/>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav activeKey={location.pathname} className="ml-auto mr-3">
