@@ -6,12 +6,12 @@ import './Footer.css';
 export default function Rodape() {
   return (
     <>
-      <footer className="bg-primary text-white link-white py-5">
+      <footer className="text-white link-white py-5 bg-danger">
         <Container>
           <Row className="text-center">
             <Col className="m-auto" sm={12} md={3} lg={3}>
               <a href="/Home">
-                <img src="/assets/img/nova-trilha-logo2.png" width="130px" title="&copy; Nova Trilha"/>
+                <img src="/assets/img/nova-trilha-logo-white.png" width="130px" title="&copy; Nova Trilha" />
               </a>
             </Col>
 
@@ -28,7 +28,7 @@ export default function Rodape() {
                 <li>
                   {/* Colocar Link */}
                   <a href="#">Capacitação</a>
-                </li> 
+                </li>
               </ul>
             </Col>
 
