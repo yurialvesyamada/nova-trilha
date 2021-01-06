@@ -5,9 +5,9 @@ import './Menu.css';
 function BaseMenu(props) {
     const { location } = props;
     return (
-        <Navbar className="navbar-dark py-3" bg="primary" expand="lg">
+        <Navbar className="navbar-dark py-3" bg="danger" expand="lg">
             <Navbar.Brand as={Link} to="/Home">
-                <img src="/assets/img/nova-trilha-logo2.png" width="55px" title="&copy; Nova Trilha"/>
+                <img src="/assets/img/nova-trilha-logo2.png" width="55px" title="&copy; Nova Trilha" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
