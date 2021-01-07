@@ -1,7 +1,11 @@
 import React from 'react';
+import Carrousel from './../Components/Home/Home.js'; 
 
-export default function Home() {
+
+
+export default function Home(props) {
   return (
-    <h1>Home Page</h1>
+    
+    <Carrousel/>
   );
 }
