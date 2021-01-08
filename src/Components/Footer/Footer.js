@@ -10,8 +10,8 @@ export default function Rodape() {
         <Container>
           <Row className="text-center">
             <Col className="m-auto" sm={12} md={3} lg={3}>
-              <a href="/Home">
-                <img src="/assets/img/nova-trilha-logo-white.png" width="130px" title="&copy; Nova Trilha" />
+              <a href="/">
+                <img src="/assets/img/nova-trilha-logo-white.png" className="shadow-sm bg-white rounded" width="130px" title="&copy; Nova Trilha" />
               </a>
             </Col>
 
@@ -20,10 +20,10 @@ export default function Rodape() {
               <div className="h5 pb-2">Inicio</div>
               <ul>
                 <li>
-                  <a href="/Home">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="/Vagas">Vagas</a>
+                  <a href="/vagas">Vagas</a>
                 </li>
                 <li>
                   {/* Colocar Link */}
@@ -37,10 +37,10 @@ export default function Rodape() {
               <div className="h5 pb-2">Nova Trilha</div>
               <ul>
                 <li>
-                  <a href="/Login">Entrar</a>
+                  <a href="/login">Entrar</a>
                 </li>
                 <li>
-                  <a href="Cadastro">Cadastre-se</a>
+                  <a href="cadastro">Cadastre-se</a>
                 </li>
                 <li title="#">Para Empresas</li>
               </ul>
@@ -54,7 +54,7 @@ export default function Rodape() {
                   <a href="#">Fale Conosco</a>
                 </li>
                 <li>
-                  <a href="/Parceiros">Parceiros</a>
+                  <a href="/parceiros">Parceiros</a>
                 </li>
                 <li title="#">Sobre Nós</li>
               </ul>
