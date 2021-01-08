@@ -1,0 +1,16 @@
+.font {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Jumbotron {
+    background-color:darkblue;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/*  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../Components/Vagas/empresas-img/jobs.jpg); */

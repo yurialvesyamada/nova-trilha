@@ -10,7 +10,7 @@ import Parceiros from './Pages/Parceiros';
 export default function Routes() {
     return (
         <Switch>
-            <Route exact path="/Home" component={Home} />
+            <Route exact path="/" component={Home} />
             <Route exact path="/Vagas" component={Vagas} />
             <Route exact path="/Login" component={Login} />
             <Route exact path="/Cadastro" component={Cadastro} />
