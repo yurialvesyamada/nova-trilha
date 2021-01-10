@@ -4,6 +4,9 @@ import { Form, Col, InputGroup, FormControl, Button, } from "react-bootstrap";
 
 
 
+
+
+
 export default function Login() {
     return (
 
@@ -15,7 +18,7 @@ export default function Login() {
             </Col>
             <Form className="bg-danger mx-auto p-5 m-5 " method="POST" action="" sm={12} md={3} lg={3}>
 
-                <div className="h2 pb-4">Login</div>
+                <div className="h2 pb-4 text-white">Login</div>
 
                 <InputGroup className="mb-4" sm={12} md={3} lg={3}>
                     <InputGroup.Prepend>
@@ -31,13 +34,19 @@ export default function Login() {
                     <FormControl type="password" placeholder="senha" />
                 </InputGroup>
 
+                <div className="text-center p-3">
+                    <div>
 
-                <Col xs="auto p-3">
-                    <Button type="submit" className="mb-2">
-                        Submit
-                   </Button>
-                </Col>
-                <p>Esquecir a senha: <a href="Recuperar_login.js"> Clique aqui</a></p>
+                        <Button className=" mb-3  px-5 rounded-pill" type=" submit" name="entrar" variant="light">Entrar</Button>{' '}
+
+                    </div>
+                    <div>
+                        <Button href="cadastro" className=" mb-3  px-4 rounded-pill" type="submit" name="cadastro" variant="outline-light">Cadastrar</Button>{' '}
+
+                    </div>
+
+                    <p className="text-white ">Esquecir a senha: <a href="Recuperar_login.js" className="text-white link-primary"> Clique aqui</a></p>
+                </div>
             </Form>
         </div>
     );

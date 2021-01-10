@@ -14,7 +14,7 @@ export default function Cadastro() {
             </Col>
             <Form className="bg-danger mx-auto p-5 m-5 " method="POST" action="" sm={12} md={3} lg={3}>
 
-                <div className="h2 pb-4">Cadastro</div>
+                <div className="h2 pb-4 text-white ">Cadastro</div>
                 <InputGroup className="mb-4" sm={12} md={3} lg={3}>
                     <InputGroup.Prepend>
                         <InputGroup.Text>@</InputGroup.Text>
@@ -41,7 +41,7 @@ export default function Cadastro() {
                     <InputGroup.Prepend>
                         <InputGroup.Text>@</InputGroup.Text>
                     </InputGroup.Prepend>
-                    <FormControl type="number" id="inlineFormInputGroup" placeholder="Telefone" />
+                    <FormControl id="inlineFormInputGroup" placeholder="Telefone" />
                 </InputGroup>
 
                 <InputGroup className="mb-4" sm={12} md={3} lg={3}>
@@ -50,14 +50,11 @@ export default function Cadastro() {
                     </InputGroup.Prepend>
                     <FormControl type="text" id="inlineFormInputGroup" placeholder="Endereço" />
                 </InputGroup>
-
-                <Col xs="auto p-3">
-                    <Button type="submit" className="mb-2">
-                        Submit
-                   </Button>
-                </Col>
-
+                <div className="text-center p-3">
+                    <Button className=" mb-3  px-5 rounded-pill" type=" submit" name="cadastrar" variant="outline-light">Cadastrar</Button>{' '}
+                </div>
+                <p className="text-white ">Já tem cadastro? <a href="Login" className="text-white link-primary">Entre aqui.</a></p>
             </Form>
-        </div>
+        </div >
     );
 }
