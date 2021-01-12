@@ -1,7 +1,6 @@
 import { Navbar, Nav, Button, Container } from 'react-bootstrap';
 import { Link, withRouter } from 'react-router-dom';
 import './Menu.css';
-import '../../Pages/Pages.css';
 
 function BaseMenu(props) {
     const { location } = props;
@@ -25,8 +24,8 @@ function BaseMenu(props) {
                 </Nav>
                 <div className="container-fluid">
                     <Nav.Item className="ml-auto">
-                        <Button href="/cadastro" className="btn-danger btn-outline-light mx-1 font">Cadastro</Button>
-                        <Button href="/login" className="btn-danger btn-light mx-1 text-danger font">Entrar</Button>
+                        <Button href="/cadastro" className="btn-danger btn-outline-light mx-1">Cadastro</Button>
+                        <Button href="/login" className="btn-danger btn-light mx-1 text-danger">Entrar</Button>
                     </Nav.Item>
                 </div>
 
