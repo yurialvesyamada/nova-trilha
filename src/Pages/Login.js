@@ -3,11 +3,26 @@ import { Form, Col, InputGroup, FormControl, Button, } from "react-bootstrap";
 
 
 
-
-
-
-
 export default function Login() {
+
+    /*
+   // estado que recebr dados e mostrar na tela
+   const [dados, setDados] = React.useState(null)
+
+
+   async function handleClick({ target }) {
+       // pegando o texto que está no botao
+
+       // puxando dados de uma APi externa
+       const produtoResponse = await fetch('http://localhost/nova-trilha/public/api/login.php');
+       // trasformando objeto
+       const produtoJson = await produtoResponse.json()
+
+       // colocando o obbjeto dentro da constante 'dados'
+       //setDados(produtoJson)
+       console.log(produtoJson);
+   }
+*/
     return (
 
         <div className=" mx-auto p-5 m-5  col-md-5 text-center" style={{ background: `linear-gradient( #dc3545 20%, rgba(5, 7, 9, 0)150%), url(${somePic})` }}>
@@ -16,7 +31,7 @@ export default function Login() {
                     <img src="/assets/img/nova-trilha-logo2.png" width="130px" alt="logo" title="&copy; Nova Trilha" />
                 </a>
             </Col>
-            <Form className="bg-danger mx-auto p-5 m-5 " method="POST" action="" sm={12} md={3} lg={3}>
+            <Form className="bg-danger mx-auto p-5 m-5 " method="POST" action="http://localhost/nova-trilha/public/api/login.php" sm={12} md={3} lg={3}>
 
                 <div className="h2 pb-4 text-white">Login</div>
 
@@ -24,20 +39,20 @@ export default function Login() {
                     <InputGroup.Prepend>
                         <InputGroup.Text>@</InputGroup.Text>
                     </InputGroup.Prepend>
-                    <FormControl id="inlineFormInputGroup" placeholder="E-mail" />
+                    <FormControl name="email" id="inlineFormInputGroup" placeholder="E-mail" />
                 </InputGroup>
                 <InputGroup className="mb-4" sm={12} md={3} lg={3}>
                     <InputGroup.Prepend>
                         <InputGroup.Text>*</InputGroup.Text>
                     </InputGroup.Prepend>
 
-                    <FormControl type="password" placeholder="senha" />
+                    <FormControl name="senha" type="password" placeholder="senha" />
                 </InputGroup>
 
                 <div className="text-center p-3">
                     <div>
 
-                        <Button className=" mb-3  px-5 rounded-pill" type=" submit" name="entrar" variant="light">Entrar</Button>{' '}
+                        <Button className=" mb-3  px-5 rounded-pill" type=" submit" name="entrar" value="entrar" variant="light">Entrar</Button>{' '}
 
                     </div>
                     <div>
