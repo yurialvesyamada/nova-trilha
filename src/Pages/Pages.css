@@ -1,6 +1,9 @@
-.font {
-    font-family: 'Times New Roman', Times, serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}    
+
 
 .jobs {
     background-image: url('../Components/Vagas/empresas-img/jobs.jpg');

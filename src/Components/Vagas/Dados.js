@@ -1,23 +1,38 @@
-import { useState, useEffect } from 'react';
-import Vagas from '../../Pages/Vagas';
-import { Container, Row } from 'react-bootstrap';
+import { Card, Container, Row, Col, Button } from 'react-bootstrap';
+import '../../Pages/Pages.css';
 
-export default function Dados() {
-    const [dados_api, setDados] = useState([]);
+export default function Dados(props) {
 
-    useEffect(() => {
-        async function fetchData() {
-            const response = await fetch("http://localhost/nova-trilha/public/api/conexao.php")
-            const dados = await response.json()
-            setDados(dados);
-        }
-        fetchData();
-    }, []);
 
+
+    return (
+        <>
+            <Container className="bg-light text-center font" fluid>
+                <Row>
+                    <Card className="mx-auto shadow bg-white rounded my-4" style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src={require(`./empresas-img/${props.imagem}`).default} alt="Empresas Contratantes" className="w-100" />
+                        <Card.Body className="d-flex flex-column mt-auto">
+                            <Card.Title>
+                                <h3>{props.vaga}</h3>
+                            </Card.Title>
+                            <Card.Text>
+                                <p className="my-3">{props.descricao}</p>
+                            </Card.Text>
+                            <Card.Text>
+                                <h4 className="my-3">R${props.salario}</h4>
+                            </Card.Text>
+                            <Card.Text>
+                                <h4 className="my-3">{props.localizacao}</h4>
+                            </Card.Text>
+                            <Button variant="outline-danger" className="mt-auto">Candidatar-se</Button>{' '}
+                        </Card.Body>
+                    </Card>
+                </Row>
+            </Container>
+
+        </>
+    )
 }
 
-return (
-    <Row>
-        <h1>Hello World!</h1>
-    </Row>
-)
+
+
