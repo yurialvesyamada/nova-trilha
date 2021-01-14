@@ -12,7 +12,7 @@ export default function Cadastro() {
                     <img src="/assets/img/nova-trilha-logo2.png" width="130px" alt="logo" title="&copy; Nova Trilha" />
                 </a>
             </Col>
-            <Form className="bg-danger mx-auto p-5 m-5 " method="POST" action="" sm={12} md={3} lg={3}>
+            <Form className="bg-danger mx-auto p-5 m-5 " method="POST" action="http://localhost/nova-trilha/public/api/cadastro.php" sm={12} md={3} lg={3}>
 
                 <div className="h2 pb-4 text-white ">Cadastro</div>
                 <InputGroup className="mb-4" sm={12} md={3} lg={3}>
