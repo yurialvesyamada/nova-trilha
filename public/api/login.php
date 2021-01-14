@@ -1,6 +1,12 @@
 <?php
 include("./conexao.php");
 
+if(empty($_POST['email']) || empty($_POST['senha'])  ){
+  echo 'preencha os campos !';
+  header("Refresh: 1;url=http://localhost:3000/login");
+  exit();
+}
+
 
   $email = filter_input(INPUT_POST, 'email');
   $senha = filter_input(INPUT_POST, 'senha');
