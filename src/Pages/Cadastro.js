@@ -19,14 +19,14 @@ export default function Cadastro() {
                     <InputGroup.Prepend>
                         <InputGroup.Text>@</InputGroup.Text>
                     </InputGroup.Prepend>
-                    <FormControl id="inlineFormInputGroup" placeholder="Nome" />
+                    <FormControl name="nome"  id="inlineFormInputGroup" placeholder="Nome" />
                 </InputGroup>
 
                 <InputGroup className="mb-4" sm={12} md={3} lg={3}>
                     <InputGroup.Prepend>
                         <InputGroup.Text>@</InputGroup.Text>
                     </InputGroup.Prepend>
-                    <FormControl id="inlineFormInputGroup" placeholder="E-mail" />
+                    <FormControl name="email"  id="inlineFormInputGroup" placeholder="E-mail" />
                 </InputGroup>
 
                 <InputGroup className="mb-4" sm={12} md={3} lg={3}>
@@ -34,21 +34,21 @@ export default function Cadastro() {
                         <InputGroup.Text>*</InputGroup.Text>
                     </InputGroup.Prepend>
 
-                    <FormControl type="password" placeholder="senha" />
+                    <FormControl name="senha"  type="password" placeholder="senha" />
                 </InputGroup>
 
                 <InputGroup className="mb-4" sm={12} md={3} lg={3}>
                     <InputGroup.Prepend>
                         <InputGroup.Text>@</InputGroup.Text>
                     </InputGroup.Prepend>
-                    <FormControl id="inlineFormInputGroup" placeholder="Telefone" />
+                    <FormControl name="telefone"  id="inlineFormInputGroup" placeholder="Telefone" />
                 </InputGroup>
 
                 <InputGroup className="mb-4" sm={12} md={3} lg={3}>
                     <InputGroup.Prepend>
                         <InputGroup.Text>@</InputGroup.Text>
                     </InputGroup.Prepend>
-                    <FormControl type="text" id="inlineFormInputGroup" placeholder="Endereço" />
+                    <FormControl name="endereco" type="text" id="inlineFormInputGroup" placeholder="Endereço" />
                 </InputGroup>
                 <div className="text-center p-3">
                     <Button className=" mb-3  px-5 rounded-pill" type=" submit" name="cadastrar" variant="outline-light">Cadastrar</Button>{' '}

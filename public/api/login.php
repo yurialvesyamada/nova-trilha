@@ -1,16 +1,26 @@
 <?php
 include("./conexao.php");
 
-//$sql = "SELECT senha,email FROM usuario";
-//$result = $conn->query($sql);
 
-if (isset($_POST['entrar'])) {
+  $email = filter_input(INPUT_POST, 'email');
+  $senha = filter_input(INPUT_POST, 'senha');
+  $sql = "SELECT * FROM usuario  WHERE `email` = '{$email}' and `senha`= '{$senha}' "; 
 
-    $senha =   $_POST['senha'];
-    $email =    $_POST['email'];
-    $sql = "select * from usuario where email =  '$email' and senha = '$senha'";
-    $result = $conn->query($sql);
-    $total_registro = mysqli_num_rows($result);
+
+  $result = $conn->query($sql); 
+
+  if( $result ->num_rows > 0 ) {
+   
+    header("location:http://localhost:3000/vagas");
+  } else {
+    echo 'E-mail ou senha incorreta !';
+  }
+ 
+/* $sql = "SELECT senha,email FROM usuario";
+$result = $conn->query($sql);
+ */
+/* 
+   
     //consultar se o usuário existe
     //  se o usuário existir testar a senha
     //      se senha estiver correta, retornar nome do usuário na página vagas
@@ -18,7 +28,9 @@ if (isset($_POST['entrar'])) {
     //  se não exixtir retornar erro na página de login
 
 }
+*/
 
-echo json_encode($result->fetch_all(MYSQLI_ASSOC));
+//echo json_encode($result->fetch_all(MYSQLI_ASSOC));
 
 $conn->close();
+?>
