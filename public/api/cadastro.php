@@ -2,8 +2,7 @@
 include("./conexao.php");
 
 if(empty($_POST['email']) || empty($_POST['senha'])  ){
-    echo 'preencha os campos !';
-    header("Refresh: 1;url=http://localhost:3000/cadastro");
+    header("Refresh: 0;url=http://localhost:3000/cadastro?erro=vazio1");
     exit();
 }
 
@@ -22,16 +21,14 @@ if (isset($_POST['cadastrar'])) {
     $result = $conn->query($sql); 
     
     if( $result ->num_rows > 0 ) {
-        echo 'E-mail já cadastrado, tente outro !';
-        header("Refresh: 1;url=http://localhost:3000/cadastro");
+      
+        header("Refresh: 0;url=http://localhost:3000/cadastro?erro=existe");
       
     } else{
- 
-    
+      
+        header("Refresh: 0;url=http://localhost:3000/vagas?erro=cadastro&nome=$nome");
         $sql = "insert into usuario (nome,  email, senha, telefone, endereco) values ('$nome', '$email', '$senha','$telefone', '$endereco')";
         $insert = $conn->query($sql);
-        echo 'cadastro realizado com sucesso!';  
-      header("Refresh: 2;url=http://localhost:3000/vagas");
     }
 }
 

@@ -2,8 +2,8 @@
 include("./conexao.php");
 
 if(empty($_POST['email']) || empty($_POST['senha'])  ){
-  echo 'preencha os campos !';
-  header("Refresh: 1;url=http://localhost:3000/login");
+ 
+  header("Refresh: 0;url=http://localhost:3000/login?erro=vazio");
   exit();
 }
 
@@ -16,11 +16,13 @@ if(empty($_POST['email']) || empty($_POST['senha'])  ){
   $result = $conn->query($sql); 
 
   if( $result ->num_rows > 0 ) {
-  
+   
     header("location:http://localhost:3000/vagas");
 
   } else {
-    echo 'E-mail ou senha incorreta !';
+    
+    header("Refresh: 0;url=http://localhost:3000/login?erro=senha");
+
 
   }
 $conn->close();

@@ -1,5 +1,8 @@
 import { React, somePic } from 'react';
 import { Form, Col, InputGroup, FormControl, Button, } from "react-bootstrap";
+import Erro from '../Components/Erro/Erro';
+
+
 
 
 
@@ -7,7 +10,8 @@ export default function Login() {
 
 
     return (
-
+        <> 
+        <Erro />
         <div className=" mx-auto p-5 m-5  col-md-5 text-center" style={{ background: `linear-gradient( #dc3545 20%, rgba(5, 7, 9, 0)150%), url(${somePic})` }}>
             <Col className="m-auto" sm={12} md={3} lg={3}>
                 <a href="/Home">
@@ -43,11 +47,13 @@ export default function Login() {
 
                     </div>
 
-                    <p className="text-white ">Esquecir a senha: <a href="Recuperar_login" className="text-white link-primary"> Clique aqui</a></p>
+                    <p className="text-white ">Esquecir a senha: <a href="Recuperar-senha" className="text-white link-primary"> Clique aqui</a></p>
                     <p className="text-white ">Excluir cadastro: <a href="Deletar_usuario" className="text-white link-primary"> Clique aqui</a></p>
+                    <p className="text-white ">Atualizar cadastro: <a href="Atualizar_cadastro" className="text-white link-primary"> Clique aqui</a></p>
                 
                 </div>
             </Form>
         </div>
+        </>
     );
 }

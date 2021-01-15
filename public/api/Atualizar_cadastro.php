@@ -2,8 +2,8 @@
 include("./conexao.php");
 
 if(empty($_POST['email']) || empty($_POST['senha'])  ){
-    echo 'preencha os campos !';
-    header("Refresh: 1;url=http://localhost:3000/Atualizar_cadastro");
+
+   header("Refresh: 0;url=http://localhost:3000/Atualizar_cadastro?erro=vazio3");
     exit();
 } 
 
@@ -19,8 +19,7 @@ if (isset($_POST['confirmar'])) {
     $result = $conn->query($sql); 
     
     if( $result ->num_rows > 0 ) {
-        echo 'E-mail já cadastrado, tente outro !';
-      
+    
     } else{
 
  $teste = "UPDATE usuario
@@ -32,15 +31,10 @@ if (isset($_POST['confirmar'])) {
  `endereco` ='$endereco' 
 
  WHERE  `email` =   '$email' ";
-
- 
- 
  $atualizar = $conn->query($teste);
-        echo 'cadastro realizado com sucesso!';  
-      header("Refresh: 2;url=http://localhost:3000/vagas");
     }
- 
+    header("Refresh: 0;url=http://localhost:3000/login?erro=atualiza");
 }
-echo json_encode($result->fetch_all(MYSQLI_ASSOC));
+
 $conn->close();
 ?>
