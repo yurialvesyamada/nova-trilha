@@ -11,7 +11,7 @@ function BaseMenu(props) {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav activeKey={location.pathname} /* className="ml-auto mr-3" */>
+                <Nav activeKey={location.pathname} >
                     <Nav.Item>
                         <Nav.Link as={Link} href="/" to="/"><i className="fas fa-home"></i>Home</Nav.Link>
                     </Nav.Item>
@@ -30,7 +30,7 @@ function BaseMenu(props) {
                 </div>
 
             </Navbar.Collapse>
-        </Navbar>   
+        </Navbar>
     )
 }
 
