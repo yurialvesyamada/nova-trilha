@@ -19,6 +19,7 @@ if(empty($_POST['email']) || empty($_POST['senha'])  ){
    
     header("location:http://localhost:3000/vagas");
 
+
   } else {
     
     header("Refresh: 0;url=http://localhost:3000/login?erro=senha");

@@ -26,12 +26,12 @@ if (isset($_POST['cadastrar'])) {
       
     } else{
       
-        header("Refresh: 0;url=http://localhost:3000/vagas?erro=cadastro&nome=$nome");
         $sql = "insert into usuario (nome,  email, senha, telefone, endereco) values ('$nome', '$email', '$senha','$telefone', '$endereco')";
         $insert = $conn->query($sql);
+        $conn->close();
+        header("Refresh: 0;url=http://localhost:3000/vagas?erro=cadastro?nome=$nome");
     }
 }
 
 
-$conn->close();
 ?>
