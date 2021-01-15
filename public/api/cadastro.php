@@ -33,7 +33,6 @@ if (isset($_POST['cadastrar'])) {
     }
 }
 
- ///  echo json_encode($result->fetch_all(MYSQLI_ASSOC));
 
 $conn->close();
 ?>

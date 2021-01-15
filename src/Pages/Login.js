@@ -5,24 +5,7 @@ import { Form, Col, InputGroup, FormControl, Button, } from "react-bootstrap";
 
 export default function Login() {
 
-    /*
-   // estado que recebr dados e mostrar na tela
-   const [dados, setDados] = React.useState(null)
 
-
-   async function handleClick({ target }) {
-       // pegando o texto que está no botao
-
-       // puxando dados de uma APi externa
-       const produtoResponse = await fetch('http://localhost/nova-trilha/public/api/login.php');
-       // trasformando objeto
-       const produtoJson = await produtoResponse.json()
-
-       // colocando o obbjeto dentro da constante 'dados'
-       //setDados(produtoJson)
-       console.log(produtoJson);
-   }
-*/
     return (
 
         <div className=" mx-auto p-5 m-5  col-md-5 text-center" style={{ background: `linear-gradient( #dc3545 20%, rgba(5, 7, 9, 0)150%), url(${somePic})` }}>
@@ -60,7 +43,9 @@ export default function Login() {
 
                     </div>
 
-                    <p className="text-white ">Esquecir a senha: <a href="Recuperar_login.js" className="text-white link-primary"> Clique aqui</a></p>
+                    <p className="text-white ">Esquecir a senha: <a href="Recuperar_login" className="text-white link-primary"> Clique aqui</a></p>
+                    <p className="text-white ">Excluir cadastro: <a href="Deletar_usuario" className="text-white link-primary"> Clique aqui</a></p>
+                
                 </div>
             </Form>
         </div>
