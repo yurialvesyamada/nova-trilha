@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron, Container, Form, Col, Row } from 'react-bootstrap';
+import { Jumbotron, Container, Form, Row } from 'react-bootstrap';
 import './Pages.css';
 import Dados from '../Components/Vagas/Dados';
 import { useState, useEffect } from 'react';

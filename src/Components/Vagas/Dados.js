@@ -1,4 +1,4 @@
-import { Card, Container, Row, Col, Button } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import '../../Pages/Pages.css';
 
 export default function Dados(props) {
