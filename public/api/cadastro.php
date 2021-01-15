@@ -15,7 +15,7 @@ if (isset($_POST['cadastrar'])) {
     $telefone = filter_input(INPUT_POST, 'telefone');
     $endereco = filter_input(INPUT_POST, 'endereco'); 
     
-    //$senha = filter_input(INPUT_POST, 'senha');
+
     $sql = "SELECT * FROM usuario  WHERE `email` = '{$email}'  limit 1"; 
     
     
@@ -23,9 +23,11 @@ if (isset($_POST['cadastrar'])) {
     
     if( $result ->num_rows > 0 ) {
         echo 'E-mail já cadastrado, tente outro !';
+        header("Refresh: 1;url=http://localhost:3000/cadastro");
       
     } else{
-
+ 
+    
         $sql = "insert into usuario (nome,  email, senha, telefone, endereco) values ('$nome', '$email', '$senha','$telefone', '$endereco')";
         $insert = $conn->query($sql);
         echo 'cadastro realizado com sucesso!';  
