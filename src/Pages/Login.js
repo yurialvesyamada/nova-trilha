@@ -26,12 +26,14 @@ export default function Login() {
                                 </InputGroup.Prepend>
                                 <FormControl name="email" type="email" id="inlineFormInputGroup" placeholder="E-mail" required />
                             </InputGroup>
+
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-key" title="Password"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
                                 <FormControl name="senha" type="password" placeholder="Senha" required />
                             </InputGroup>
+                            
                             <div className="p-4">
                                 <Col>
                                     <Button className="px-5 mb-3 rounded-pill" type=" submit" name="entrar" value="entrar" variant="light">Entrar</Button>{' '}

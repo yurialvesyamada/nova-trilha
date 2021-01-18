@@ -2,9 +2,7 @@ import { Card, Button } from 'react-bootstrap';
 import '../../Pages/Pages.css';
 
 export default function Dados(props) {
-
-
-
+    
     return (
         <>
             <Card className="mx-auto shadow-sm bg-white rounded my-4" style={{ width: '18rem' }}>
@@ -28,6 +26,7 @@ export default function Dados(props) {
         </>
     )
 }
+
 
 
 
