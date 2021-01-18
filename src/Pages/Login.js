@@ -1,59 +1,61 @@
 import { React, somePic } from 'react';
-import { Form, Col, InputGroup, FormControl, Button, } from "react-bootstrap";
+import { Form, Col, InputGroup, FormControl, Button, Container, Row } from "react-bootstrap";
 import Erro from '../Components/Erro/Erro';
-
-
-
-
+import './Pages.css';
 
 export default function Login() {
 
 
     return (
-        <> 
-        <Erro />
-        <div className=" mx-auto p-5 m-5  col-md-5 text-center" style={{ background: `linear-gradient( #dc3545 20%, rgba(5, 7, 9, 0)150%), url(${somePic})` }}>
-            <Col className="m-auto" sm={12} md={3} lg={3}>
-                <a href="/Home">
-                    <img src="/assets/img/nova-trilha-logo2.png" width="130px" alt="logo" title="&copy; Nova Trilha" />
-                </a>
-            </Col>
-            <Form className="bg-danger mx-auto p-5 m-5 " method="POST" action="http://localhost/nova-trilha/public/api/login.php" sm={12} md={3} lg={3}>
+        <>
+            <Erro />
+            <Container className="text-center bg-light text-white links" fluid>
+                <Row>
+                    <Col md={6} lg={6} className="mx-auto my-5 rounded" style={{ background: `linear-gradient( #dc3545 20%, rgba(5, 7, 9, 0)150%), url(${somePic})` }}>
+                        <Col className="mx-auto my-5" sm={12} md={6} lg={6}>
+                            <a href="/">
+                                <img src="/assets/img/nova-trilha-logo2.png" width="150px" alt="&copy; Nova Trilha" title="&copy; Nova Trilha" className="shadow-sm bg-white rounded" />
+                            </a>
+                        </Col>
+                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="http://localhost/nova-trilha/public/api/login.php">
 
-                <div className="h2 pb-4 text-white">Login</div>
+                            <h1 className="py-4">Login</h1>
+                            <InputGroup className="pb-4">
+                                <InputGroup.Prepend>
+                                    <InputGroup.Text><i className="fas fa-envelope" title="E-mail"></i></InputGroup.Text>
+                                </InputGroup.Prepend>
+                                <FormControl name="email" type="email" id="inlineFormInputGroup" placeholder="E-mail" required />
+                            </InputGroup>
+                            <InputGroup className="pb-4">
+                                <InputGroup.Prepend>
+                                    <InputGroup.Text><i className="fas fa-key" title="Password"></i></InputGroup.Text>
+                                </InputGroup.Prepend>
+                                <FormControl name="senha" type="password" placeholder="Senha" required />
+                            </InputGroup>
+                            <div className="p-4">
+                                <Col>
+                                    <Button className="px-5 mb-3 rounded-pill" type=" submit" name="entrar" value="entrar" variant="light">Entrar</Button>{' '}
+                                </Col>
+                                <Col>
+                                    <Button href="cadastro" className="px-5 mb-3 rounded-pill" type="submit" name="cadastro" variant="outline-light">Cadastrar</Button>{' '}
+                                </Col>
 
-                <InputGroup className="mb-4" sm={12} md={3} lg={3}>
-                    <InputGroup.Prepend>
-                        <InputGroup.Text>@</InputGroup.Text>
-                    </InputGroup.Prepend>
-                    <FormControl name="email" id="inlineFormInputGroup" placeholder="E-mail" />
-                </InputGroup>
-                <InputGroup className="mb-4" sm={12} md={3} lg={3}>
-                    <InputGroup.Prepend>
-                        <InputGroup.Text>*</InputGroup.Text>
-                    </InputGroup.Prepend>
-
-                    <FormControl name="senha" type="password" placeholder="senha" />
-                </InputGroup>
-
-                <div className="text-center p-3">
-                    <div>
-
-                        <Button className=" mb-3  px-5 rounded-pill" type=" submit" name="entrar" value="entrar" variant="light">Entrar</Button>{' '}
-
-                    </div>
-                    <div>
-                        <Button href="cadastro" className=" mb-3  px-4 rounded-pill" type="submit" name="cadastro" variant="outline-light">Cadastrar</Button>{' '}
-
-                    </div>
-
-                    <p className="text-white ">Esquecir a senha: <a href="Recuperar-senha" className="text-white link-primary"> Clique aqui</a></p>
-                    <p className="text-white ">Excluir cadastro: <a href="Deletar_usuario" className="text-white link-primary"> Clique aqui</a></p>
-                    <p className="text-white ">Atualizar cadastro: <a href="Atualizar_cadastro" className="text-white link-primary"> Clique aqui</a></p>
-                
-                </div>
-            </Form>
-        </div>
+                                <h6>Esqueci a Senha: <a href="Recuperar-senha"> Clique aqui</a></h6>
+                                <h6>Excluir Cadastro: <a href="Deletar_usuario"> Clique aqui</a></h6>
+                                <h6>Atualizar Cadastro: <a href="Atualizar_cadastro"> Clique aqui</a></h6>
+                            </div>
+                        </Form>
+                    </Col>
+                </Row>
+            </Container>
         </>
     );
 }
+
+
+
+
+
+
+
+

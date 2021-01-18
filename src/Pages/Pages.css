@@ -13,4 +13,6 @@ body {
     background-size: cover;
 }
 
-
+.links a, h6 {
+    color: whitesmoke;
+}

@@ -8,7 +8,7 @@ export default function Vagas(props) {
     const [apiVagas, setDados] = useState([]);
     useEffect(() => {
         async function fetchData() {
-            const resposta = await fetch("http://localhost/nova-trilha/public/api/conexao.php")
+            const resposta = await fetch("http://localhost/nova-trilha/public/api/vagas.php")
             const dados = await resposta.json()
             setDados(dados);
         }
