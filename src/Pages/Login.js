@@ -1,10 +1,10 @@
 import { React, somePic } from 'react';
 import { Form, Col, InputGroup, FormControl, Button, Container, Row } from "react-bootstrap";
-import Erro from '../Components/Erro/Erro';
+
 import './Pages.css';
 
 export default function Login() {
-
+    
 
     return (
         <>

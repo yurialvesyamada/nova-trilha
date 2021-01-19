@@ -17,7 +17,7 @@ export default function Erro() {
     var erro = getQueryVariable("erro");       //Retorna o tipo de erro
     
     if (erro === "atualiza") {
-        return < Alert className="text-center text-dark h5" variant={"primary"}>  Dados atualizados com sucesso !   </Alert>
+       return < Alert className="text-center text-dark h5" variant={"primary"}>  Dados atualizados com sucesso !   </Alert>
     } else
      if (erro === "cadastro") {
         return < Alert className="text-center text-dark h5" variant={"primary"}>  Cadastro realizado com sucesso !   </Alert>
