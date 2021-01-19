@@ -57,9 +57,9 @@ function BaseMenu(props) {
 
                                 return (
                                     <>
-                                        <Button href="/login" className="btn-danger btn-light mx-1 text-danger">Entrar</Button>;
+                                        <Button href="/login" className="btn-danger btn-light mx-1 text-danger">Entrar</Button>
 
-                        <Button href="/cadastro" className="btn-danger btn-outline-light mx-1">Cadastro</Button>
+                                        <Button href="/cadastro" className="btn-danger btn-outline-light mx-1">Cadastro</Button>
 
                                     </>
 
