@@ -19,7 +19,7 @@ export default function Atualizar_cadastro() {
                             </a>
                         </Col>
 
-                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="http://localhost/nova-trilha/public/api/Atualizar_cadastro.php">
+                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="/Atualizar_cadastro.php">
 
                             <h2 className="py-4">Atualizar Cadastro</h2>
                             <InputGroup className="pb-4">

@@ -18,7 +18,7 @@ export default function Recuperar_login() {
                             </a>
                         </Col>
 
-                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="http://localhost/nova-trilha/public/api/Recuperar_login.php">
+                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="/api/Recuperar_login.php">
 
                             <h1 className="py-4">Recuperar Senha</h1>
                             <InputGroup className="pb-4">

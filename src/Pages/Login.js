@@ -17,7 +17,7 @@ export default function Login() {
                                 <img src="/assets/img/nova-trilha-logo2.png" width="150px" alt="&copy; Nova Trilha" title="&copy; Nova Trilha" className="shadow-sm bg-white rounded" />
                             </a>
                         </Col>
-                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="http://localhost/nova-trilha/public/api/login.php">
+                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="/api/login.php">
 
                             <h1 className="py-4">Login</h1>
                             <InputGroup className="pb-4">

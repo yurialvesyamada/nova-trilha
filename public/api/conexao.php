@@ -6,10 +6,10 @@ header("Access-Control-Allow-Headers: Content-Type");
 header("Content-type: application/json");
 
 $servername = "localhost";
+$username = "epiz_27734971";
+$password = "novatrilha2021";
+$dbname = "epiz_27734971_novatrilha";
 
-$username = "admin";
-$password = "1234";
-$dbname = "nova-trilha";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 $conn->query("set names utf8");
