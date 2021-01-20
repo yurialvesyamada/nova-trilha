@@ -32,6 +32,3 @@ if (isset($_POST['cadastrar'])) {
         header("Refresh: 0;url=http://localhost:3000/vagas?erro=cadastro&?nome=$nome");
     }
 }
-
-
-?>

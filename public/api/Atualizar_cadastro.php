@@ -36,4 +36,3 @@ if (isset($_POST['confirmar'])) {
 }
 
 $conn->close();
-?>

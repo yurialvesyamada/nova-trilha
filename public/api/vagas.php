@@ -1,4 +1,4 @@
-<?php require('./conexao.php'); 
+<?php require('./conexao.php');
 
 $sql = "SELECT * FROM vagas";
 $result = $conn->query($sql);
