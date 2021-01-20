@@ -24,7 +24,7 @@ export default function Vagas(props) {
                     <Form className="mx-auto w-50">
                         <Form.Group controlId="exampleForm.ControlInput1">
                             <Form.Control type="search" placeholder="Ex. Segurança, Porteiro." />
-                            <a href="/vagas" className="btn btn-outline-light mx-auto my-5">Pesquisar</a>
+                            <a href="#vagas" className="btn btn-outline-light mx-auto my-5">Pesquisar</a>
                         </Form.Group>
                     </Form>
                 </Container>
@@ -34,7 +34,7 @@ export default function Vagas(props) {
             <Container className="text-center bg-light" fluid>
 
                 <div className="py-4">
-                    <h1>Vagas Publicadas</h1>
+                    <h1 id="vagas">Vagas Publicadas</h1>
                 </div>
                 <Row>
                     {apiVagas && apiVagas.map(item => <Dados key={item.id} imagem={item.imagem} vaga={item.vaga} descricao={item.descricao} empregador={item.empregador} salario={item.salario} localizacao={item.localizacao}

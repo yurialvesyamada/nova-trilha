@@ -17,3 +17,6 @@ body {
     color: whitesmoke;
 }
 
+html  {
+    scroll-behavior: smooth;
+}

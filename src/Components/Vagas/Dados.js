@@ -1,8 +1,24 @@
 import { Card, Button } from 'react-bootstrap';
 import '../../Pages/Pages.css';
+import { useState } from 'react';
 
 export default function Dados(props) {
     
+    const [fundo, setFundo] = useState("outline-danger")
+    const [texto, setTexto] = useState("Candidatar-se")
+    const mudar = () => {
+        if (fundo == "success") {
+            setFundo("outline-danger")
+            setTexto("Candidatar-se")
+        } else {
+            
+            setFundo("success")
+            setTexto("Candidatado")
+        }
+    }
+
+
+
     return (
         <>
             <Card className="mx-auto shadow-sm bg-white rounded my-4" style={{ width: '18rem' }}>
@@ -20,7 +36,7 @@ export default function Dados(props) {
                     <Card.Text>
                         <h4 className="my-3">{props.localizacao}</h4>
                     </Card.Text>
-                    <Button variant="outline-danger" className="mt-auto">Candidatar-se</Button>{' '}
+                    <Button variant={fundo} className="mt-auto" onClick={() => mudar()}>{texto}</Button>{' '}
                 </Card.Body>
             </Card>
         </>
