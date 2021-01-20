@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/nova-trilha/static/css/main.c63fa2e8.chunk.css",
+    "main.js": "/nova-trilha/static/js/main.0edd52bf.chunk.js",
+    "main.js.map": "/nova-trilha/static/js/main.0edd52bf.chunk.js.map",
+    "runtime-main.js": "/nova-trilha/static/js/runtime-main.a4a3ab75.js",
+    "runtime-main.js.map": "/nova-trilha/static/js/runtime-main.a4a3ab75.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/nova-trilha/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.4e98c9c3.chunk.js": "/nova-trilha/static/js/2.4e98c9c3.chunk.js",
+    "static/js/2.4e98c9c3.chunk.js.map": "/nova-trilha/static/js/2.4e98c9c3.chunk.js.map",
+    "index.html": "/nova-trilha/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/nova-trilha/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.c63fa2e8.chunk.css.map": "/nova-trilha/static/css/main.c63fa2e8.chunk.css.map",
+    "static/js/2.4e98c9c3.chunk.js.LICENSE.txt": "/nova-trilha/static/js/2.4e98c9c3.chunk.js.LICENSE.txt",
+    "static/media/fundocomlogo3.b8072be6.svg": "/nova-trilha/static/media/fundocomlogo3.b8072be6.svg",
+    "static/media/fundoquadrado2.11414760.svg": "/nova-trilha/static/media/fundoquadrado2.11414760.svg",
+    "static/media/jobs.jpg": "/nova-trilha/static/media/jobs.ac685e9f.jpg",
+    "static/media/logo_advocacia.png": "/nova-trilha/static/media/logo_advocacia.0da15987.png",
+    "static/media/logo_barbearia.png": "/nova-trilha/static/media/logo_barbearia.2901c3fe.png",
+    "static/media/logo_curso.png": "/nova-trilha/static/media/logo_curso.5d7721ce.png",
+    "static/media/logo_escola.png": "/nova-trilha/static/media/logo_escola.5e8ad25f.png",
+    "static/media/logo_estudio.png": "/nova-trilha/static/media/logo_estudio.90b61555.png",
+    "static/media/logo_faculdade.png": "/nova-trilha/static/media/logo_faculdade.939dbe71.png",
+    "static/media/logo_grafica.png": "/nova-trilha/static/media/logo_grafica.319e1821.png",
+    "static/media/logo_pet.png": "/nova-trilha/static/media/logo_pet.8c208168.png",
+    "static/media/mulher_retangulo2.e7125ace.png": "/nova-trilha/static/media/mulher_retangulo2.e7125ace.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a4a3ab75.js",
+    "static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.4e98c9c3.chunk.js",
+    "static/css/main.c63fa2e8.chunk.css",
+    "static/js/main.0edd52bf.chunk.js"
+  ]
+}
