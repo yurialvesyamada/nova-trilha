@@ -61,9 +61,9 @@ export default function Cadastro() {
 
                             <div className="p-4">
                                 <Col>
-                                    <Button className="px-5 mb-3 rounded-pill" type="submit" name="cadastrar" variant="outline-light">Cadastrar</Button>{' '}
+                                    <Button href="login" className="px-5 mb-3 rounded-pill" type="submit" name="cadastrar" variant="outline-light">Cadastrar</Button>{' '}
                                 </Col>
-                                <h6>Já tem Cadastro? <a href="Login">Entre aqui.</a></h6>
+                                <h6>Já tem Cadastro? <a href="login">Entre aqui.</a></h6>
                                 <h6>Atualizar Cadastro -  <a href="Atualizar_cadastro">Clique aqui.</a></h6>
                             </div>
                         </Form>
