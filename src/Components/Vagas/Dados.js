@@ -7,7 +7,7 @@ export default function Dados(props) {
     const [fundo, setFundo] = useState("outline-danger")
     const [texto, setTexto] = useState("Candidatar-se")
     const mudar = () => {
-        if (fundo == "success") {
+        if (fundo === "success") {
             setFundo("outline-danger")
             setTexto("Candidatar-se")
         } else {
