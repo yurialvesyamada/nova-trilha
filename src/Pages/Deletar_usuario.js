@@ -21,7 +21,7 @@ export default function Delete_usuario() {
                             </a>
                         </Col>
 
-                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="http://localhost/nova-trilha/public/api/deletar_usuario.php">
+                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="/api/deletar_usuario.php">
 
                         <h1 className="py-4">Deletar Usuario</h1>
 

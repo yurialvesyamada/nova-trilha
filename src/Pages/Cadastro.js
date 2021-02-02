@@ -18,7 +18,7 @@ export default function Cadastro() {
                             </a>
                         </Col>
 
-                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="http://localhost/nova-trilha/public/api/cadastro.php">
+                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="/api/cadastro.php">
 
                             <h1 className="py-4">Cadastro</h1>
                             <InputGroup className="pb-4">

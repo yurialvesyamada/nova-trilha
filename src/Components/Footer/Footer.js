@@ -1,16 +1,16 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import './Footer.css';
+import { Link, withRouter } from 'react-router-dom';
 
 
-
-export default function Rodape() {
+function Footer() {
   return (
     <>
       <footer className="text-white link-white py-5 bg-danger">
         <Container>
           <Row className="text-center">
             <Col className="m-auto" sm={12} md={3} lg={3}>
-              <a href="/">
+              <a to="/">
                 <img src="/assets/img/nova-trilha-logo-white.png" className="shadow-sm bg-white rounded" width="130px" title="&copy; Nova Trilha" />
               </a>
             </Col>
@@ -20,13 +20,13 @@ export default function Rodape() {
               <div className="h5 pb-2">Inicio</div>
               <ul>
                 <li>
-                  <a href="/">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="/vagas">Vagas</a>
+                  <Link to="/vagas">Vagas</Link>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="blank_">Capacitação</a>
+                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank">Capacitação</a>
                 </li>
               </ul>
             </Col>
@@ -36,13 +36,13 @@ export default function Rodape() {
               <div className="h5 pb-2">Nova Trilha</div>
               <ul>
                 <li>
-                  <a href="/login">Entrar</a>
+                  <Link to="/login">Entrar</Link>
                 </li>
                 <li>
-                  <a href="cadastro">Cadastre-se</a>
+                  <Link to="cadastro">Cadastre-se</Link>
                 </li>
                 <li>
-                  <a href="#">Para Empresas</a>
+                <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank">Para Empresas</a>
                 </li>
               </ul>
             </Col>
@@ -52,13 +52,13 @@ export default function Rodape() {
               <div className="h5 pb-2">Suporte</div>
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="blank_">Fale Conosco</a>
+                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank">Fale Conosco</a>
                 </li>
                 <li>
-                  <a href="/parceiros">Parceiros</a>
+                  <Link to="/parceiros">Parceiros</Link>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="blank_">Sobre Nós</a>
+                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank">Sobre Nós</a>
                 </li>
               </ul>
             </Col>
@@ -85,6 +85,7 @@ export default function Rodape() {
   )
 }
 
+export default withRouter(Footer)
 
 
 

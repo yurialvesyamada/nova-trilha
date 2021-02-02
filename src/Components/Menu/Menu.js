@@ -2,7 +2,7 @@ import { Navbar, Nav, Button, Container } from 'react-bootstrap';
 import { Link, withRouter } from 'react-router-dom';
 import './Menu.css';
 
-function BaseMenu(props) {
+function Menu(props) {
     const { location } = props;
     function getQueryVariable(variable) {
         var query = window.location.search.substring(1);
@@ -28,13 +28,13 @@ function BaseMenu(props) {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav activeKey={location.pathname} >
                         <Nav.Item>
-                            <Nav.Link as={Link} href="/" to="/"><i className="fas fa-home"></i>Home</Nav.Link>
+                            <Nav.Link as={Link} to="/"><i className="fas fa-home"></i>Home</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} href="/vagas" to="/vagas"><i className="fas fa-briefcase"></i>Vagas</Nav.Link>
+                            <Nav.Link as={Link} to="/vagas"><i className="fas fa-briefcase"></i>Vagas</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} href="/parceiros" to="/parceiros"><i className="far fa-handshake"></i>Parceiros</Nav.Link>
+                            <Nav.Link as={Link} to="/parceiros"><i className="far fa-handshake"></i>Parceiros</Nav.Link>
                         </Nav.Item>
                     </Nav>
 
@@ -46,16 +46,16 @@ function BaseMenu(props) {
 
                                         <>
                                             <div className="m-auto h4 shadow-sm text-white rounded">
-                                                <i class="fas fa-user-circle" title={nomeLogin}></i> {nomeLogin}
+                                                <i className="fas fa-user-circle" title={nomeLogin}></i> {nomeLogin}
                                             </div>
-                                            <Button href="/" className="btn-light ml-5 text-danger" title="Clique para sair">Logout</Button>
+                                            <Button to="/" as={Link} className="btn-light ml-5 text-danger" title="Clique para sair">Logout</Button>
                                         </>
                                     )
                                 } else {
                                     return (
                                         <>
-                                            <Button href="/login" className="btn-light mx-1 text-danger">Entrar</Button>
-                                            <Button href="/cadastro" className="btn-danger btn-outline-light mx-1">Cadastro</Button>
+                                            <Button to="/login" as={Link} className="btn-light mx-1 text-danger">Entrar</Button>
+                                            <Button to="/cadastro" as={Link} className="btn-danger btn-outline-light mx-1">Cadastro</Button>
                                         </>
 
                                     )
@@ -70,9 +70,7 @@ function BaseMenu(props) {
     )
 }
 
-const Menu = withRouter(BaseMenu)
-
-export default Menu;
+export default withRouter(Menu);
 
 
 
