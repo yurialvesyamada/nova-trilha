@@ -1,4 +1,4 @@
-import { Navbar, Nav, Button, Container } from 'react-bootstrap';
+import { Navbar, Nav, Button, Container, Image } from 'react-bootstrap';
 import { Link, withRouter } from 'react-router-dom';
 import './Menu.css';
 
@@ -22,7 +22,7 @@ function BaseMenu(props) {
         <>
             <Navbar className="navbar-dark py-2 bg-danger text-center" expand="lg">
                 <Navbar.Brand as={Link} to="/">
-                    <img src="/assets/img/nova-trilha-logo-white.png" width="55px" title="&copy; Nova Trilha" />
+                    <Image src="/assets/img/nova-trilha-logo-white.png" width="60px" title="&copy; Nova Trilha" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

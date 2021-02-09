@@ -11,7 +11,7 @@ export default function Rodape() {
           <Row className="text-center">
             <Col className="m-auto" sm={12} md={3} lg={3}>
               <a href="/">
-                <img src="/assets/img/nova-trilha-logo-white.png" className="shadow-sm bg-white rounded" width="130px" title="&copy; Nova Trilha" />
+                <img src="/assets/img/nova-trilha-logo-white.png" className="shadow-sm bg-white rounded" width="130px" title="&copy; Nova Trilha" alt="Nova Trilha"/>
               </a>
             </Col>
 
@@ -26,7 +26,7 @@ export default function Rodape() {
                   <a href="/vagas">Vagas</a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="blank_">Capacitação</a>
+                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer">Capacitação</a>
                 </li>
               </ul>
             </Col>
@@ -42,7 +42,7 @@ export default function Rodape() {
                   <a href="cadastro">Cadastre-se</a>
                 </li>
                 <li>
-                  <a href="#">Para Empresas</a>
+                  <a href="/">Para Empresas</a>
                 </li>
               </ul>
             </Col>
@@ -52,13 +52,13 @@ export default function Rodape() {
               <div className="h5 pb-2">Suporte</div>
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="blank_">Fale Conosco</a>
+                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer">Fale Conosco</a>
                 </li>
                 <li>
                   <a href="/parceiros">Parceiros</a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="blank_">Sobre Nós</a>
+                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer">Sobre Nós</a>
                 </li>
               </ul>
             </Col>
@@ -66,11 +66,11 @@ export default function Rodape() {
 
             <Col className="m-auto" sm={12} md={3} lg={3}>
               <div className="text-center">
-                <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" title="LinkedIn" className="linkedin"><i
+                <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="linkedin"><i
                   className="fa fa-3x mx-2 fa-linkedin text-light"></i></a>
-                <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" title="Facebook" className="facebook"><i
+                <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer" title="Facebook" className="facebook"><i
                   className="fa fa-3x mx-2 fa-facebook text-light"></i></a>
-                <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" title="Twitter" className="twitter"><i
+                <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer" title="Twitter" className="twitter"><i
                   className="fa fa-3x mx-2 fa-twitter text-light"></i></a>
               </div>
             </Col>

@@ -1,2 +1,3 @@
 # Nova Trilha
-## Projeto Squad 3 Recode Pro 2020
+
+## Projeto Social Squad 3 Recode Pro 2020
