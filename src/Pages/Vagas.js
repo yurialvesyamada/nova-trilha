@@ -24,7 +24,7 @@ export default function Vagas(props) {
                     <Form className="mx-auto w-50">
                         <Form.Group controlId="exampleForm.ControlInput1">
                             <Form.Control type="search" placeholder="Ex. Segurança, Porteiro." />
-                            <a href="#vagas" className="btn btn-outline-light mx-auto my-5">Pesquisar</a>
+                            <a href="#vagas" className="btn btn-light mx-auto my-5">Pesquisar</a>
                         </Form.Group>
                     </Form>
                 </Container>

@@ -10,8 +10,8 @@ function Footer() {
         <Container>
           <Row className="text-center">
             <Col className="m-auto" sm={12} md={3} lg={3}>
-              <a to="/">
-                <img src="/assets/img/nova-trilha-logo-white.png" className="shadow-sm bg-white rounded" width="130px" title="&copy; Nova Trilha" />
+              <a href="/">
+                <img src="/assets/img/nova-trilha-logo-white.png" alt="Nova-Trilha Logo" className="shadow-sm bg-white rounded" width="130px" title="&copy; Nova Trilha" />
               </a>
             </Col>
 
@@ -26,7 +26,7 @@ function Footer() {
                   <Link to="/vagas">Vagas</Link>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank">Capacitação</a>
+                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer">Capacitação</a>
                 </li>
               </ul>
             </Col>
@@ -42,7 +42,7 @@ function Footer() {
                   <Link to="cadastro">Cadastre-se</Link>
                 </li>
                 <li>
-                <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank">Para Empresas</a>
+                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer">Para Empresas</a>
                 </li>
               </ul>
             </Col>
@@ -52,27 +52,25 @@ function Footer() {
               <div className="h5 pb-2">Suporte</div>
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank">Fale Conosco</a>
+                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer">Fale Conosco</a>
                 </li>
                 <li>
                   <Link to="/parceiros">Parceiros</Link>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank">Sobre Nós</a>
+                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer">Sobre Nós</a>
                 </li>
               </ul>
             </Col>
 
 
-            <Col className="m-auto" sm={12} md={3} lg={3}>
-              <div className="text-center">
-                <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" title="LinkedIn" className="linkedin"><i
-                  className="fa fa-3x mx-2 fa-linkedin text-light"></i></a>
-                <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" title="Facebook" className="facebook"><i
-                  className="fa fa-3x mx-2 fa-facebook text-light"></i></a>
-                <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" title="Twitter" className="twitter"><i
-                  className="fa fa-3x mx-2 fa-twitter text-light"></i></a>
-              </div>
+            <Col className="m-auto" sm={12} md={6} lg={3}>
+              <a href="https://github.com/yurialvesyamada/nova-trilha" target="_blank" rel="noopener noreferrer" title="GitHub" className="github"><i
+                className="fa fa-3x mx-2 fa-github text-light"></i></a>
+              <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="linkedin"><i
+                className="fa fa-3x mx-2 fa-linkedin text-light"></i></a>
+              <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer" title="Facebook" className="facebook"><i
+                className="fa fa-3x mx-2 fa-facebook text-light"></i></a>
             </Col>
 
           </Row>

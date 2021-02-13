@@ -22,7 +22,7 @@ function Menu(props) {
         <>
             <Navbar className="navbar-dark py-2 bg-danger text-center" expand="lg">
                 <Navbar.Brand as={Link} to="/">
-                    <img src="/assets/img/nova-trilha-logo-white.png" width="55px" title="&copy; Nova Trilha" />
+                    <img src="/assets/img/nova-trilha-logo-white.png" alt="Nova-Trilha" width="70px" title="&copy; Nova Trilha" className="shadow-sm bg-light rounded"/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
