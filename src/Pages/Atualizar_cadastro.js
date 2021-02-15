@@ -2,9 +2,12 @@ import { React, somePic } from 'react';
 import { Form, Col, InputGroup, FormControl, Button, Container, Row } from "react-bootstrap";
 import Erro from '../Components/Erro/Erro';
 import './Pages.css';
+import { useSelector } from 'react-redux';
 
 
 export default function Atualizar_cadastro() {
+    const caminho = useSelector(state => state.caminho.caminho)
+
     return (
         <>
             <Erro />
@@ -19,12 +22,12 @@ export default function Atualizar_cadastro() {
                             </a>
                         </Col>
 
-                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="http://localhost/api/Atualizar_cadastro.php">
+                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action={caminho + "/api/Atualizar_cadastro.php"}>
 
                             <h2 className="py-4">Atualizar Cadastro</h2>
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
-                                    <InputGroup.Text><i class="fas fa-user" title="Username"></i></InputGroup.Text>
+                                    <InputGroup.Text><i className="fas fa-user" title="Username"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
                                 <FormControl name="nome" type="name" id="inlineFormInputGroup" placeholder="Nome" required />
                             </InputGroup>
@@ -45,14 +48,14 @@ export default function Atualizar_cadastro() {
 
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
-                                    <InputGroup.Text><i class="fas fa-mobile-alt"></i></InputGroup.Text>
+                                    <InputGroup.Text><i className="fas fa-mobile-alt"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
                                 <FormControl name="telefone" type="number" minLength="1" maxLength="12" id="inlineFormInputGroup" placeholder="Telefone" required />
                             </InputGroup>
 
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
-                                    <InputGroup.Text><i class="fas fa-map-marker-alt"></i></InputGroup.Text>
+                                    <InputGroup.Text><i className="fas fa-map-marker-alt"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
                                 <FormControl name="endereco" type="adress" id="inlineFormInputGroup" placeholder="Endereço" required />
                             </InputGroup>

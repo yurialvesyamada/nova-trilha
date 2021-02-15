@@ -3,12 +3,16 @@ import { Jumbotron, Container, Form, Row } from 'react-bootstrap';
 import './Pages.css';
 import Dados from '../Components/Vagas/Dados';
 import { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 
 export default function Vagas(props) {
+    const caminho = useSelector(state => state.caminho.caminho)
+
+
     const [apiVagas, setDados] = useState([]);
     useEffect(() => {
         async function fetchData() {
-            const resposta = await fetch("http://localhost/api/vagas.php")
+            const resposta = await fetch(`${caminho}/api/vagas.php`)
             const dados = await resposta.json()
             setDados(dados);
         }

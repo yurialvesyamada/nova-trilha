@@ -2,8 +2,11 @@ import Erro from '../Components/Erro/Erro';
 import { React, somePic } from 'react';
 import { Form, Col, InputGroup, FormControl, Button, Container, Row } from "react-bootstrap";
 import './Pages.css';
+import { useSelector } from 'react-redux';
 
 export default function Recuperar_login() {
+    const caminho = useSelector(state => state.caminho.caminho)
+
     return (
         <>
             <Erro />
@@ -18,7 +21,7 @@ export default function Recuperar_login() {
                             </a>
                         </Col>
 
-                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="http://localhost/api/Recuperar_login.php">
+                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action={caminho + "/api/Recuperar_login.php"}>
 
                             <h1 className="py-4">Recuperar Senha</h1>
                             <InputGroup className="pb-4">

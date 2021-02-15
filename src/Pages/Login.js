@@ -2,9 +2,10 @@ import { React, somePic } from 'react';
 import { Form, Col, InputGroup, FormControl, Button, Container, Row } from "react-bootstrap";
 import Erro from '../Components/Erro/Erro';
 import './Pages.css';
+import { useSelector } from 'react-redux';
 
 export default function Login() {
-
+    const caminho = useSelector(state => state.caminho.caminho)
 
     return (
         <>
@@ -17,7 +18,7 @@ export default function Login() {
                                 <img src="/assets/img/nova-trilha-logo2.png" width="150px" alt="&copy; Nova Trilha" title="&copy; Nova Trilha" className="shadow-sm bg-white rounded" />
                             </a>
                         </Col>
-                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="http://localhost/api/login.php">
+                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action={caminho + "/api/login.php"}>
 
                             <h1 className="py-4">Login</h1>
                             <InputGroup className="pb-4">
@@ -33,7 +34,7 @@ export default function Login() {
                                 </InputGroup.Prepend>
                                 <FormControl name="senha" type="password" placeholder="Senha" required />
                             </InputGroup>
-                            
+
                             <div className="p-4">
                                 <Col>
                                     <Button className="px-5 mb-3 rounded-pill" type=" submit" name="entrar" value="entrar" variant="light">Entrar</Button>{' '}

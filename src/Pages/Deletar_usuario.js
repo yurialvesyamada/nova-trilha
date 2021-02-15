@@ -2,11 +2,12 @@ import { React, somePic } from 'react';
 import { Form, Col, InputGroup, FormControl, Button, Container, Row } from "react-bootstrap";
 import Erro from '../Components/Erro/Erro';
 import './Pages.css';
+import { useSelector } from 'react-redux';
 
 
 
 export default function Delete_usuario() {
-
+    const caminho = useSelector(state => state.caminho.caminho)
 
     return (
         <>
@@ -21,9 +22,9 @@ export default function Delete_usuario() {
                             </a>
                         </Col>
 
-                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="http://localhost/api/deletar_usuario.php">
+                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action={caminho + "/api/deletar_usuario.php"}>
 
-                        <h1 className="py-4">Deletar Usuario</h1>
+                            <h1 className="py-4">Deletar Usuario</h1>
 
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
@@ -47,8 +48,8 @@ export default function Delete_usuario() {
         </>
     );
 }
-                                
-                                    
+
+
 
 
 
