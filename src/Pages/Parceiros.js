@@ -22,7 +22,7 @@ export default function Parceiros() {
                                 <h3>Menezes  Advogados</h3>
                             </Card.Title>
                             <Card.Text>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem sed ipsa, consequuntur quidem consequatur possimus repudiandae? Cupiditate, recusandae voluptates tempora iste sed, voluptas, aut at quisquam eum minima iusto.</p>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem sed ipsa, consequuntur quidem consequatur possimus repudiandae? Cupiditate, recusandae voluptates tempora iste sed, voluptas, aut at quisquam eum minima iusto.</span>
                             </Card.Text>
                             <Button variant="outline-danger" className="mt-auto" href="/vagas">Visitar</Button>{' '}
                         </Card.Body>
@@ -35,7 +35,7 @@ export default function Parceiros() {
                                 <h3>Navalha Barbearia</h3>
                             </Card.Title>
                             <Card.Text>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem sed ipsa, consequuntur quidem consequatur possimus repudiandae? Cupiditate, recusandae voluptates tempora iste sed, voluptas, aut at quisquam eum minima iusto.</p>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem sed ipsa, consequuntur quidem consequatur possimus repudiandae? Cupiditate, recusandae voluptates tempora iste sed, voluptas, aut at quisquam eum minima iusto.</span>
                             </Card.Text>
                             <Button variant="outline-danger" className="mt-auto" href="/vagas">Visitar</Button>{' '}
                         </Card.Body>
@@ -48,7 +48,7 @@ export default function Parceiros() {
                                 <h3>Origem Cursos e Concursos</h3>
                             </Card.Title>
                             <Card.Text>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem sed ipsa, consequuntur quidem consequatur possimus repudiandae? Cupiditate, recusandae voluptates tempora iste sed, voluptas, aut at quisquam eum minima iusto.</p>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem sed ipsa, consequuntur quidem consequatur possimus repudiandae? Cupiditate, recusandae voluptates tempora iste sed, voluptas, aut at quisquam eum minima iusto.</span>
                             </Card.Text>
                             <Button variant="outline-danger" className="mt-auto" href="/vagas">Visitar</Button>{' '}
                         </Card.Body>
@@ -61,7 +61,7 @@ export default function Parceiros() {
                                 <h3>Animalias PetCenter</h3>
                             </Card.Title>
                             <Card.Text>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem sed ipsa, consequuntur quidem consequatur possimus repudiandae? Cupiditate, recusandae voluptates tempora iste sed, voluptas, aut at quisquam eum minima iusto.</p>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem sed ipsa, consequuntur quidem consequatur possimus repudiandae? Cupiditate, recusandae voluptates tempora iste sed, voluptas, aut at quisquam eum minima iusto.</span>
                             </Card.Text>
                             <Button variant="outline-danger" className="mt-auto" href="/vagas">Visitar</Button>{' '}
                         </Card.Body>
