@@ -7,6 +7,8 @@ import Recuperar_login from './Pages/Recuperar_login';
 import Parceiros from './Pages/Parceiros';
 import Deletar_usuario from './Pages/Deletar_usuario';
 import Atualizar_cadastro from './Pages/Atualizar_cadastro';
+import Empresas from './Pages/Empresas';
+import Candidatos from './Pages/Candidatos';
 
 
 export default function Routes() {
@@ -20,6 +22,8 @@ export default function Routes() {
             <Route exact path="/Parceiros" component={Parceiros} />
             <Route exact path="/Deletar_usuario" component={Deletar_usuario} />
             <Route exact path="/Atualizar_cadastro" component={Atualizar_cadastro} />
+            <Route exact path="/Company" component={Empresas} />
+            <Route exatc path="/Candidatos" component={Candidatos} />
         </Switch>
     );
 }
