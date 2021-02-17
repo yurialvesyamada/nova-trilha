@@ -1,4 +1,4 @@
-import { Jumbotron, Container, Row, Button } from 'react-bootstrap';
+import { Jumbotron, Container, Row, Button, Col } from 'react-bootstrap';
 import React from 'react';
 import CadastroVaga from '../Components/Companies/Company';
 import { useState, useEffect } from 'react';
@@ -24,8 +24,12 @@ export default function Empresas() {
                 <Container className="py-5" fluid>
                     <h1 className="display-1 font">Vagas Cadastradas</h1>
                     <h3 className="my-5">Anuncie a sua vaga GRÁTIS!</h3>
-                    <Button variant={"info"} className="rounded mx-auto my-4 btn-block w-25">Anunciar Vagas</Button>
-                    <Button variant={"info"} className="rounded mx-auto my-4 btn-block w-25" href="/candidatos">Candidatos</Button>
+                    <Row className="justifity-content-center">
+                        <Col>
+                            <Button variant={"light"} lg={3} /*  size="lg" */ className="rounded my-4 text-dark mx-2">Anunciar Vagas</Button>
+                            <Button variant={"light"} lg={3} /*  size="lg" */ className="rounded my-4 text-dark mx-2" href="/candidatas">Candidatas</Button>
+                        </Col>
+                    </Row>
                 </Container>
             </Jumbotron>
 

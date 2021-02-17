@@ -8,7 +8,7 @@ import Parceiros from './Pages/Parceiros';
 import Deletar_usuario from './Pages/Deletar_usuario';
 import Atualizar_cadastro from './Pages/Atualizar_cadastro';
 import Empresas from './Pages/Empresas';
-import Candidatos from './Pages/Candidatos';
+import Candidatas from './Pages/Candidatas';
 
 
 export default function Routes() {
@@ -23,7 +23,7 @@ export default function Routes() {
             <Route exact path="/Deletar_usuario" component={Deletar_usuario} />
             <Route exact path="/Atualizar_cadastro" component={Atualizar_cadastro} />
             <Route exact path="/Company" component={Empresas} />
-            <Route exatc path="/Candidatos" component={Candidatos} />
+            <Route exatc path="/Candidatas" component={Candidatas} />
         </Switch>
     );
 }
