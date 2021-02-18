@@ -8,15 +8,15 @@ function Footer() {
     <>
       <Container className="text-white link-white p-5 bg-danger" fluid>
         <Row className="text-center">
-          <Col className="m-auto" sm={12} md={3} lg={3}>
+          <Col className="pb-3" sm={12} md={3} lg={3}>
             <a href="/">
-              <img src="/assets/img/nova-trilha-logo-white.png" alt="Nova-Trilha Logo" className="shadow-sm bg-white rounded" width="130px" title="&copy; Nova Trilha" />
+              <img src="/assets/img/nova-trilha-logo-white.png" alt="Nova-Trilha Logo" className="shadow-sm rounded" width="110px" title="&copy; Nova Trilha" />
             </a>
           </Col>
 
           <Col className="my-auto" sm={12} md={3} lg={2}>
 
-            <div className="h4 pb-2">Inicio</div>
+            <div className="h4 pb-2">Nova Trilha</div>
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -25,14 +25,15 @@ function Footer() {
                 <Link to="/vagas">Vagas</Link>
               </li>
               <li>
-                <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer">Capacitação</a>
+                <Link to="/parceiros">Parceiros</Link>
               </li>
+
             </ul>
           </Col>
 
           <Col className="my-auto" sm={12} md={3} lg={2}>
 
-            <div className="h4 pb-2">Nova Trilha</div>
+            <div className="h4 pb-2">Links</div>
             <ul>
               <li>
                 <Link to="/login">Entrar</Link>
@@ -53,9 +54,7 @@ function Footer() {
               <li>
                 <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer">Fale Conosco</a>
               </li>
-              <li>
-                <Link to="/parceiros">Parceiros</Link>
-              </li>
+
               <li>
                 <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer">Sobre Nós</a>
               </li>

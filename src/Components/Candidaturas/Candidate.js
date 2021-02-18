@@ -3,14 +3,14 @@ import { Table } from 'react-bootstrap';
 export default function Candidate() {
     return (
         <>
-            <Table striped bordered hover className="shadow-sm rounded mx-auto">
+            <Table responsive="sm" striped bordered hover className="shadow-sm rounded mx-auto">
                 <thead>
                     <tr className="text-center bg-info text-white">
-                        <th><i className="fas fa-users"></i></th>
+                        <th><i className="fas fa-list-ol"></i></th>
                         <th>Nome Completo</th>
                         <th>Idade</th>
                         <th>E-mail</th>
-                        <th>Telefone</th>
+                        <th>Contato</th>
                         <th>Cidade</th>
                         <th>UF</th>
                         <th>Vaga</th>
@@ -29,7 +29,7 @@ export default function Candidate() {
                         <td>SP</td>
                         <td>Recepcionista</td>
                         <td>Inglês Intermediário</td>
-                        <td><i className="fas fa-download" title="Clique para baixar"></i></td>
+                        <td><i className="fas fa-download" title="Clique para baixar" ></i></td>
                     </tr>
                     <tr>
                         <td>2</td>

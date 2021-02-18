@@ -23,16 +23,20 @@ export default function Vagas(props) {
         <>
             <Jumbotron className="text-center text-light my-auto w-100 jobs" fluid>
                 <Container className="py-5" fluid>
-                    <h1 className="display-1 font">Nova Trilha</h1>
+                    <h1 className="d-none d-lg-inline-flex display-1">Nova Trilha</h1>
+                    <h1 className="d-lg-none d-block h1">Nova Trilha</h1>
                     <h4 className="my-5">Procure uma oportunidade de emprego</h4>
-                    <Form className="mx-auto w-50">
+                    <Form>
                         <Form.Group controlId="exampleForm.ControlInput1">
-                            <Form.Control type="search" placeholder="Ex. Segurança, Porteiro." />
+                            <Form.Control type="search" placeholder="Ex.: Recepcionista, Secretaria" className="d-none d-lg-inline-flex w-50" />
+                            <Form.Control type="search" placeholder="Ex.: Recepcionista, Secretaria" className="d-lg-none d-inline-flex" />
+                            <br />
                             <a href="#vagas" className="btn btn-light mx-auto my-5">Pesquisar</a>
                         </Form.Group>
                     </Form>
                 </Container>
             </Jumbotron>
+
 
 
             <Container className="text-center bg-light" fluid>
