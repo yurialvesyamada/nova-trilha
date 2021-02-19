@@ -1,9 +1,9 @@
 import { React, somePic } from 'react';
-import { Form, Col, InputGroup, FormControl, Button, Container, Row } from "react-bootstrap";
+import { Form, Col, InputGroup, FormControl, Button, Container, Row, Image } from "react-bootstrap";
 import Erro from '../Components/Erro/Erro';
 import './Pages.css';
 import { useSelector } from 'react-redux';
-
+import novatrilha from '../assets/img/nova-trilha-logo2.png';
 
 
 export default function Delete_usuario() {
@@ -18,7 +18,7 @@ export default function Delete_usuario() {
 
                         <Col className="mx-auto my-5" sm={12} md={6} lg={6}>
                             <a href="/">
-                                <img src="/assets/img/nova-trilha-logo2.png" width="150px" alt="&copy; Nova Trilha" title="&copy; Nova Trilha" className="shadow-sm bg-white rounded" />
+                                <Image src={novatrilha} alt="&copy; Nova Trilha" title="&copy; Nova Trilha" className="shadow-sm rounded w-50" />
                             </a>
                         </Col>
 

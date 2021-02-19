@@ -1,9 +1,9 @@
 import { React, somePic } from 'react';
-import { Form, Col, InputGroup, FormControl, Button, Container, Row } from "react-bootstrap";
+import { Form, Col, InputGroup, FormControl, Button, Container, Row, Image } from "react-bootstrap";
 import Erro from '../Components/Erro/Erro';
 import './Pages.css';
 import { useSelector } from 'react-redux';
-
+import novatrilha from '../assets/img/nova-trilha-logo2.png';
 
 
 export default function Cadastro() {
@@ -17,7 +17,7 @@ export default function Cadastro() {
                     <Col md={6} lg={6} className="mx-auto my-5 rounded" style={{ background: `linear-gradient( #dc3545 20%, rgba(5, 7, 9, 0)150%), url(${somePic})` }}>
                         <Col className="mx-auto my-5" sm={12} md={6} lg={6}>
                             <a href="/">
-                                <img src="/assets/img/nova-trilha-logo2.png" width="150px" alt="&copy; Nova Trilha" title="&copy; Nova Trilha" className="shadow-sm bg-white rounded" />
+                                <Image src={novatrilha} alt="&copy; Nova Trilha" title="&copy; Nova Trilha" className="shadow-sm rounded w-50" />
                             </a>
                         </Col>
 
@@ -35,7 +35,7 @@ export default function Cadastro() {
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-envelope" title="E-mail"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
-                                <FormControl name="email" type="email" id="inlineFormInputGroup" placeholder="E-mail" required />
+                                <FormControl name="email" type="email" id="inlineFormInputGroup2" placeholder="E-mail" required />
                             </InputGroup>
 
                             <InputGroup className="pb-4">
@@ -49,14 +49,14 @@ export default function Cadastro() {
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-mobile-alt"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
-                                <FormControl name="telefone" type="number" minLength="1" maxLength="12" id="inlineFormInputGroup" placeholder="Telefone" required />
+                                <FormControl name="telefone" type="number" minLength="1" maxLength="12" id="inlineFormInputGroup3" placeholder="Telefone" required />
                             </InputGroup>
 
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-map-marker-alt"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
-                                <FormControl name="endereco" type="adress" id="inlineFormInputGroup" placeholder="Endereço" required />
+                                <FormControl name="endereco" type="adress" id="inlineFormInputGroup4" placeholder="Endereço" required />
                             </InputGroup>
 
                             <div className="p-4">

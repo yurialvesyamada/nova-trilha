@@ -17,7 +17,7 @@ function Footer() {
 
           <Col className="my-auto" sm={12} md={3} lg={2}>
 
-            <div className="h4 pb-2">Nova Trilha</div>
+            <div className="h2 pb-2">Nova Trilha</div>
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -34,7 +34,7 @@ function Footer() {
 
           <Col className="my-auto" sm={12} md={3} lg={2}>
 
-            <div className="h4 pb-2">Links</div>
+            <div className="h2 pb-2">Links</div>
             <ul>
               <li>
                 <Link to="/login">Entrar</Link>
@@ -50,7 +50,7 @@ function Footer() {
 
           <Col className="my-auto" sm={12} md={3} lg={2}>
 
-            <div className="h4 pb-2">Suporte</div>
+            <div className="h2 pb-2">Suporte</div>
             <ul>
               <li>
                 <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer">Fale Conosco</a>
@@ -59,16 +59,17 @@ function Footer() {
               <li>
                 <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer">Sobre Nós</a>
               </li>
+              <br />
             </ul>
           </Col>
 
           <Col className="m-auto" sm={12} md={6} lg={3}>
             <a href="https://github.com/yurialvesyamada/nova-trilha" target="_blank" rel="noopener noreferrer" title="GitHub" className="github"><i
-              className="fa fa-3x mx-2 fa-github text-light"></i></a>
+              className="fa fa-4x mx-2 fa-github text-light"></i></a>
             <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="linkedin"><i
-              className="fa fa-3x mx-2 fa-linkedin text-light"></i></a>
+              className="fa fa-4x mx-2 fa-linkedin text-light"></i></a>
             <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer" title="Facebook" className="facebook"><i
-              className="fa fa-3x mx-2 fa-facebook text-light"></i></a>
+              className="fa fa-4x mx-2 fa-facebook text-light"></i></a>
           </Col>
 
         </Row>
