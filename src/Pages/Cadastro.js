@@ -48,12 +48,12 @@ export default function Cadastro() {
                                                                                    
                             <Form.Row className="py-3 px-4">
 
-                                <Form.Group className="px-5 "  as={Col} controlId="formGridEmail">
+                                <Form.Group className="px-5 "  as={Col} /* controlId="formGridEmail" */>
                                 <Form.Label>Senha</Form.Label>
                                 <Form.Control name="senha" type="password" placeholder="Senha" />
                                 </Form.Group>
 
-                                <Form.Group className="px-2"  as={Col} controlId="formGridPassword">
+                                <Form.Group className="px-2"  as={Col} /* controlId="formGridPassword" */>
                                 <Form.Label>telefone</Form.Label>
                                 <Form.Control  name="telefone"  type="number" placeholder="Telefone" />
                                 </Form.Group>
@@ -61,12 +61,12 @@ export default function Cadastro() {
                                                                                           
                             <Form.Row  className="py-3 px-4" > 
 
-                                <Form.Group className="px-5 " as={Col} controlId="formGridCity">
+                                <Form.Group className="px-5 " as={Col} /* controlId="formGridCity" */>
                                 <Form.Label>Cidade</Form.Label>
                                 <Form.Control name="cidade"  placeholder="Cidade"/>
                                 
                                 </Form.Group>
-                                <Form.Group className="px-2" type="adress" as={Col} controlId="formGridCity"   >
+                                <Form.Group className="px-2" type="adress" as={Col} /* controlId="formGridCity" */   >
                                 <Form.Label>Endereço</Form.Label>
                                 <Form.Control name="endereco"  placeholder="Endereço"/>
                                 </Form.Group>
@@ -74,7 +74,7 @@ export default function Cadastro() {
                                 
                             </Form.Row >
 
-                            <Form.Group name="escolaridade" className="py-1 px-4 mx-5 pr-5" as={Col} controlId="formGridState">
+                            <Form.Group name="escolaridade" className="py-1 px-4 mx-5 pr-5" as={Col} /* controlId="formGridState" */>
                                 <Form.Label>Escolaridade</Form.Label>
                                 <Form.Control as="select" defaultValue="ensino">
                                     <option>Ensino Fundamental Incompleto</option>
@@ -89,7 +89,7 @@ export default function Cadastro() {
                                 </Form.Control>
                                 </Form.Group>                             
 
-                            <InputGroup className="py-3" as={Row} controlId="formHorizonta">
+                            <InputGroup className="py-3" as={Row} /* controlId="formHorizonta" */>
                             <Form.Label column sm={3}>
                             Função Pretendida 
                             </Form.Label>

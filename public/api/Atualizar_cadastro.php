@@ -20,7 +20,7 @@ if (isset($_POST['confirmar'])) {
 
     if ($result->num_rows > 0) {
     } else {
-
+        // UPDATE sequence SET id=LAST_INSERT_ID(id+1);
         $teste = "UPDATE usuario
  SET 
  `nome` = '$nome',
