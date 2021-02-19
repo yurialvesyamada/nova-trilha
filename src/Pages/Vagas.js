@@ -39,7 +39,7 @@ export default function Vagas(props) {
 
 
 
-            <Container className="text-center bg-light" fluid>
+            <Container className="text-center bg-light" fluid>  
 
                 <div className="py-4">
                     <h1 id="vagas">Vagas Publicadas</h1>

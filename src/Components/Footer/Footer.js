@@ -65,11 +65,11 @@ function Footer() {
 
           <Col className="m-auto" sm={12} md={6} lg={3}>
             <a href="https://github.com/yurialvesyamada/nova-trilha" target="_blank" rel="noopener noreferrer" title="GitHub" className="github"><i
-              className="fa fa-4x mx-2 fa-github text-light"></i></a>
+              className="fa fa-3x mx-2 fa-github text-light"></i></a>
             <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="linkedin"><i
-              className="fa fa-4x mx-2 fa-linkedin text-light"></i></a>
+              className="fa fa-3x mx-2 fa-linkedin text-light"></i></a>
             <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer" title="Facebook" className="facebook"><i
-              className="fa fa-4x mx-2 fa-facebook text-light"></i></a>
+              className="fa fa-3x mx-2 fa-facebook text-light"></i></a>
           </Col>
 
         </Row>
