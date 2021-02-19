@@ -1,9 +1,9 @@
-import { React, somePic } from 'react';
+import { React } from 'react';
 import { Form, Col, InputGroup, FormControl, Button, Container, Row, Image } from "react-bootstrap";
 import Erro from '../Components/Erro/Erro';
 import './Pages.css';
 import { useSelector } from 'react-redux';
-import novatrilha from '../assets/img/nova-trilha-logo2.png';
+import novatrilha from '../assets/img/nova-trilha-logo.png';
 
 
 export default function Atualizar_cadastro() {
@@ -13,9 +13,9 @@ export default function Atualizar_cadastro() {
         <>
             <Erro />
 
-            <Container className="text-center bg-light text-white links" fluid>
-                <Row>
-                    <Col md={6} lg={6} className="mx-auto my-5 rounded" style={{ background: `linear-gradient( #dc3545 20%, rgba(5, 7, 9, 0)150%), url(${somePic})` }}>
+            <Container className="text-center links" fluid>
+                <Row className="background py-5">
+                    <Col md={6} lg={6} className="mx-auto rounded">
 
                         <Col className="mx-auto my-5" sm={12} md={6} lg={6}>
                             <a href="/">
@@ -23,9 +23,9 @@ export default function Atualizar_cadastro() {
                             </a>
                         </Col>
 
-                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action={caminho + "/api/Atualizar_cadastro.php"}>
+                        <Form className="px-5 m-3" method="POST" action={caminho + "/api/Atualizar_cadastro.php"}>
 
-                            <h2 className="py-4">Atualizar Cadastro</h2>
+                            <h1 className="py-4 h1 text-info">Atualizar Cadastro</h1>
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-user" title="Username"></i></InputGroup.Text>
@@ -37,7 +37,7 @@ export default function Atualizar_cadastro() {
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-envelope" title="E-mail"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
-                                <FormControl name="email_novo" type="email" id="inlineFormInputGroup" placeholder="Novo e-mail" required />
+                                <FormControl name="email_novo" type="email" id="inlineFormInputGroup2" placeholder="Novo e-mail" required />
                             </InputGroup>
 
                             <InputGroup className="pb-4">
@@ -51,30 +51,31 @@ export default function Atualizar_cadastro() {
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-mobile-alt"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
-                                <FormControl name="telefone" type="number" minLength="1" maxLength="12" id="inlineFormInputGroup" placeholder="Telefone" required />
+                                <FormControl name="telefone" type="number" minLength="1" maxLength="12" id="inlineFormInputGroup3" placeholder="Telefone" required />
                             </InputGroup>
 
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-map-marker-alt"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
-                                <FormControl name="endereco" type="adress" id="inlineFormInputGroup" placeholder="Endereço" required />
+                                <FormControl name="endereco" type="adress" id="inlineFormInputGroup4" placeholder="Endereço" required />
                             </InputGroup>
-                            <p>Digite o e-mail anterior:</p>
+
+                            <h5 className="h5 text-info">Digite o e-mail anterior:</h5>
 
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-envelope" title="E-mail"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
-                                <FormControl name="email" type="email" id="inlineFormInputGroup" placeholder="E-mail" required />
+                                <FormControl name="email" type="email" id="inlineFormInputGroup5" placeholder="E-mail" required />
                             </InputGroup>
 
-                            <div className="p-4">
-                                <Col>
-                                    <Button className="px-5 mb-3 rounded-pill" type="submit" name="confirmar" variant="light">Confirmar</Button>{' '}
+                            <div>
+                                <Col className="pb-3">
+                                    <Button className="px-5 rounded-pill" type="submit" name="confirmar" variant="info">Confirmar</Button>{' '}
                                 </Col>
-                                <Col>
-                                    <Button href="/login" className="px-4 mb-3 rounded-pill" type="submit" name="cancelar_cadastro" value="cancelar_cadastro" variant="outline-light">Cancelar</Button>{' '}
+                                <Col className="pb-3">
+                                    <Button href="/login" className="rounded-pill px-5" type="submit" name="cancelar_cadastro" value="cancelar_cadastro" variant="outline-light">Voltar</Button>{' '}
                                 </Col>
                             </div>
                         </Form>

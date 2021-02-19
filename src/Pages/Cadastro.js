@@ -3,7 +3,7 @@ import { Form, Col, InputGroup, FormControl, Button, Container, Row, Image } fro
 import Erro from '../Components/Erro/Erro';
 import './Pages.css';
 import { useSelector } from 'react-redux';
-import novatrilha from '../assets/img/nova-trilha-logo2.png';
+import novatrilha from '../assets/img/nova-trilha-logo.png';
 
 
 export default function Cadastro() {
@@ -12,18 +12,17 @@ export default function Cadastro() {
     return (
         <>
             <Erro />
-            <Container className="text-center bg-light text-white links" fluid>
-                <Row>
-                    <Col md={6} lg={6} className="mx-auto my-5 rounded" style={{ background: `linear-gradient( #dc3545 20%, rgba(5, 7, 9, 0)150%), url(${somePic})` }}>
+            <Container className="text-center text-dark links" fluid>
+                <Row className="background py-5">
+                    <Col md={6} lg={6} className="mx-auto rounded">
                         <Col className="mx-auto my-5" sm={12} md={6} lg={6}>
                             <a href="/">
                                 <Image src={novatrilha} alt="&copy; Nova Trilha" title="&copy; Nova Trilha" className="shadow-sm rounded w-50" />
                             </a>
                         </Col>
 
-                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action={caminho + "/api/cadastro.php"}>
-
-                            <h1 className="py-4">Cadastro</h1>
+                        <Form className="px-5 m-3" method="POST" action={caminho + "/api/cadastro.php"}>
+                            <h1 className="py-4 h1 text-info">Cadastro</h1>
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-user" title="Username"></i></InputGroup.Text>
@@ -59,12 +58,14 @@ export default function Cadastro() {
                                 <FormControl name="endereco" type="adress" id="inlineFormInputGroup4" placeholder="Endereço" required />
                             </InputGroup>
 
-                            <div className="p-4">
-                                <Col>
-                                    <Button className="px-5 mb-3 rounded-pill" type="submit" name="cadastrar" variant="outline-light">Cadastrar</Button>{' '}
+                            <div>
+                                <Col className="pb-3">
+                                    <Button className="px-5 rounded-pill" type="submit" name="cadastrar" variant="info">Cadastrar</Button>{' '}
                                 </Col>
-                                <h6>Já tem Cadastro? <a href="Login">Entre aqui.</a></h6>
-                                <h6>Atualizar Cadastro -  <a href="Atualizar_cadastro">Clique aqui.</a></h6>
+                                <Col className="h6 pb-3 text-light">
+                                    <h6>Já tem Cadastro? <a href="Login">Entre aqui.</a></h6>
+                                    {/* <h6>Atualizar Cadastro -  <a href="Atualizar_cadastro">Clique aqui.</a></h6> */}
+                                </Col>
                             </div>
                         </Form>
                     </Col>
