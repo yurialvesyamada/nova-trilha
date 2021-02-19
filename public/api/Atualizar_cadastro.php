@@ -3,7 +3,7 @@ include("./conexao.php");
 
 if (empty($_POST['email']) || empty($_POST['senha'])) {
 
-    header("Refresh: 0;url=http://localhost:3000/Atualizar_cadastro?erro=vazio3");
+    header("Refresh: 0;url=$build/Atualizar_cadastro?erro=vazio3");
     exit();
 }
 
@@ -32,7 +32,7 @@ if (isset($_POST['confirmar'])) {
  WHERE  `email` =   '$email' ";
         $atualizar = $conn->query($teste);
     }
-    header("Refresh: 0;url=http://localhost:3000/login?erro=atualiza");
+    header("Refresh: 0;url=$build/login?erro=atualiza");
 }
 
 $conn->close();
