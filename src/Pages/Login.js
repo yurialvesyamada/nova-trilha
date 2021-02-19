@@ -23,7 +23,7 @@ export default function Login() {
 
                         <Form className="px-5 m-3" method="POST" action={caminho + "/api/login.php"}>
                             <h1 className="py-4 h1 text-light">Login</h1>
-                           
+
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-envelope" title="E-mail"></i></InputGroup.Text>
@@ -45,13 +45,11 @@ export default function Login() {
                                 <Col className="pb-3">
                                     <Button href="cadastro" className="px-3 rounded-pill text-info" type="submit" name="cadastro" variant="light">Cadastrar</Button>{' '}
                                 </Col>
-                                <Col className="pb-3">
-                                    <a href="Recuperar-senha" className="h5">Esqueci a Senha</a>
-                                </Col>
-                                {/*  <h6>Excluir Cadastro: <a href="Deletar_usuario"> Clique aqui</a></h6>
-                                <h6>Atualizar Cadastro: <a href="Atualizar_cadastro"> Clique aqui</a></h6> */}
                             </div>
                         </Form>
+                        <h4 className="py-3 h4">
+                            <a href="Recuperar-senha">Esqueci a Senha</a>
+                        </h4>
                     </Col>
                 </Row>
             </Container>

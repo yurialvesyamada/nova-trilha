@@ -62,12 +62,11 @@ export default function Cadastro() {
                                 <Col className="pb-3">
                                     <Button className="px-5 rounded-pill" type="submit" name="cadastrar" variant="info">Cadastrar</Button>{' '}
                                 </Col>
-                                <Col className="h6 pb-3 text-light">
-                                    <h6>Já tem Cadastro? <a href="Login">Entre aqui.</a></h6>
-                                    {/* <h6>Atualizar Cadastro -  <a href="Atualizar_cadastro">Clique aqui.</a></h6> */}
-                                </Col>
                             </div>
                         </Form>
+                                <div className="h4 py-3 text-light">
+                                    <h4>Já tem Cadastro? <a href="/login" className="border-bottom">Entre aqui.</a></h4>
+                                </div>
                     </Col>
                 </Row>
             </Container>

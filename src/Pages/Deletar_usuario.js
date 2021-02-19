@@ -1,9 +1,9 @@
-import { React, somePic } from 'react';
+import { React } from 'react';
 import { Form, Col, InputGroup, FormControl, Button, Container, Row, Image } from "react-bootstrap";
 import Erro from '../Components/Erro/Erro';
 import './Pages.css';
 import { useSelector } from 'react-redux';
-import novatrilha from '../assets/img/nova-trilha-logo2.png';
+import novatrilha from '../assets/img/nova-trilha-logo.png';
 
 
 export default function Delete_usuario() {
@@ -12,9 +12,9 @@ export default function Delete_usuario() {
     return (
         <>
             <Erro />
-            <Container className="text-center bg-light text-white links" fluid>
-                <Row>
-                    <Col md={6} lg={6} className="mx-auto my-5 rounded" style={{ background: `linear-gradient( #dc3545 20%, rgba(5, 7, 9, 0)150%), url(${somePic})` }}>
+            <Container className="text-center links" fluid>
+                <Row className="background py-5">
+                    <Col md={6} lg={6} className="mx-auto rounded">
 
                         <Col className="mx-auto my-5" sm={12} md={6} lg={6}>
                             <a href="/">
@@ -22,10 +22,10 @@ export default function Delete_usuario() {
                             </a>
                         </Col>
 
-                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action={caminho + "/api/deletar_usuario.php"}>
+                        <Form className="px-5 m-3" method="POST" action={caminho + "/api/deletar_usuario.php"}>
 
-                            <h1 className="py-4">Deletar Usuario</h1>
 
+                            <h1 className="py-4 h1 text-dark">Deletar Usuário</h1>
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-envelope" title="E-mail"></i></InputGroup.Text>
@@ -33,12 +33,12 @@ export default function Delete_usuario() {
                                 <FormControl name="email" type="email" id="inlineFormInputGroup" placeholder="E-mail" required />
                             </InputGroup>
 
-                            <div className="p-4">
-                                <Col>
-                                    <Button className="px-5 mb-3 rounded-pill" type="submit" name="confirmar" value="confirmar" variant="light">Confirmar</Button>{' '}
+                            <div>
+                                <Col className="pb-3">
+                                    <Button className="px-5 rounded-pill" type="submit" name="confirmar" value="confirmar" variant="info">Confirmar</Button>{' '}
                                 </Col>
-                                <Col>
-                                    <Button href="/" className="px-4 mb-3 rounded-pill" type="submit" name="cancelar" variant="outline-light">Cancelar</Button>{' '}
+                                <Col className="pb-3">
+                                    <Button href="/" className="px-4 rounded-pill text-info" type="submit" name="cancelar" variant="light">Cancelar</Button>{' '}
                                 </Col>
                             </div>
                         </Form>

@@ -4,6 +4,7 @@ import Erro from '../Components/Erro/Erro';
 import './Pages.css';
 import { useSelector } from 'react-redux';
 import novatrilha from '../assets/img/nova-trilha-logo.png';
+import { Link } from 'react-router-dom';
 
 
 export default function Atualizar_cadastro() {
@@ -77,8 +78,10 @@ export default function Atualizar_cadastro() {
                                 <Col className="pb-3">
                                     <Button href="/login" className="rounded-pill px-5" type="submit" name="cancelar_cadastro" value="cancelar_cadastro" variant="outline-light">Voltar</Button>{' '}
                                 </Col>
+
                             </div>
                         </Form>
+                        <Link to="/Deletar_usuario" className="h5">Excluir Usuário</Link>
                     </Col>
                 </Row>
             </Container>

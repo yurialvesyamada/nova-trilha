@@ -7,5 +7,14 @@
     border-bottom: 2px solid rgba(255, 255, 245, .9);
 }
 
+.links:hover {
+    color: white !important;
+    
+}
+
+.woman_img {
+    width: 50px;
+}
+    
 
 /* NOVA TRILHA */

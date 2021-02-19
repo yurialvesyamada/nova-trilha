@@ -2,6 +2,7 @@ import { Navbar, Nav, Button, Container, Image } from 'react-bootstrap';
 import { Link, withRouter } from 'react-router-dom';
 import './Menu.css';
 import novatrilha from '../../assets/img/nova-trilha-logo2.png';
+import woman from '../../assets/img/woman.jpg';
 
 
 function Menu(props) {
@@ -47,10 +48,12 @@ function Menu(props) {
                                     return (
 
                                         <>
-                                            <div className="m-auto h4 shadow-sm text-white rounded">
-                                                <i className="fas fa-user-circle" title={nomeLogin}></i> {nomeLogin}
+                                            <div>
+                                                <Link to="/Atualizar_cadastro" className="links text-light h3">
+                                                      <Image src={woman} className="woman_img mr-3" roundedCircle/>  {nomeLogin}
+                                                </Link>
                                             </div>
-                                            <Button to="/" as={Link} className="btn-light ml-5 text-info" title="Clique para sair">Logout</Button>
+                                            <Button to="/" as={Link} className="btn-light ml-5 my-auto text-info" title="Clique para sair">Logout</Button>
                                         </>
                                     )
                                 } else {
