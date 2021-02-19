@@ -1,13 +1,16 @@
-import Erro from '../Components/Erro/Erro';
 import { React, somePic } from 'react';
 import { Form, Col, InputGroup, FormControl, Button, Container, Row } from "react-bootstrap";
+import Erro from '../Components/Erro/Erro';
 import './Pages.css';
 
-export default function Recuperar_login() {
+
+
+export default function Delete_usuario() {
+
+
     return (
         <>
             <Erro />
-
             <Container className="text-center bg-light text-white links" fluid>
                 <Row>
                     <Col md={6} lg={6} className="mx-auto my-5 rounded" style={{ background: `linear-gradient( #dc3545 20%, rgba(5, 7, 9, 0)150%), url(${somePic})` }}>
@@ -18,9 +21,10 @@ export default function Recuperar_login() {
                             </a>
                         </Col>
 
-                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="http://localhost/nova-trilha/public/api/Recuperar_login.php">
+                        <Form className="bg-danger px-5 m-4 rounded shadow-sm" method="POST" action="http://localhost/nova-trilha/public/api/deletar_usuario.php">
 
-                            <h1 className="py-4">Recuperar Senha</h1>
+                        <h1 className="py-4">Deletar Usuario</h1>
+
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-envelope" title="E-mail"></i></InputGroup.Text>
@@ -30,10 +34,10 @@ export default function Recuperar_login() {
 
                             <div className="p-4">
                                 <Col>
-                                    <Button className="px-5 mb-3 rounded-pill" type="submit" name="confirmarsenha" value="confirmar" variant="light">Confirmar</Button>{' '}
+                                    <Button className="px-5 mb-3 rounded-pill" type="submit" name="confirmar" value="confirmar" variant="light">Confirmar</Button>{' '}
                                 </Col>
                                 <Col>
-                                    <Button href="/login" className="px-4 mb-3 rounded-pill" type="submit" name="cancelar" variant="outline-light">Cancelar</Button>{' '}
+                                    <Button href="/" className="px-4 mb-3 rounded-pill" type="submit" name="cancelar" variant="outline-light">Cancelar</Button>{' '}
                                 </Col>
                             </div>
                         </Form>
@@ -43,8 +47,8 @@ export default function Recuperar_login() {
         </>
     );
 }
-
-
+                                
+                                    
 
 
 

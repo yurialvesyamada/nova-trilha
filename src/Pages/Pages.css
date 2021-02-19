@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}    
+
+
+.jobs {
+    background-image: url('../Components/Vagas/empresas-img/jobs.jpg');
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.links a, h6 {
+    color: whitesmoke;
+}

@@ -1,17 +1,19 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import './Footer.css';
+import Cookies1 from '../cookies/'; 
 
 
 
 export default function Rodape() {
   return (
     <>
+      <Cookies1/>
       <footer className="text-white link-white py-5 bg-danger">
         <Container>
           <Row className="text-center">
             <Col className="m-auto" sm={12} md={3} lg={3}>
-              <a href="/Home">
-                <img src="/assets/img/nova-trilha-logo-white.png" width="130px" title="&copy; Nova Trilha" />
+              <a href="/">
+                <img src="/assets/img/nova-trilha-logo-white.png" className="shadow-sm bg-white rounded" width="130px" title="&copy; Nova Trilha" />
               </a>
             </Col>
 
@@ -20,14 +22,13 @@ export default function Rodape() {
               <div className="h5 pb-2">Inicio</div>
               <ul>
                 <li>
-                  <a href="/Home">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="/Vagas">Vagas</a>
+                  <a href="/vagas">Vagas</a>
                 </li>
                 <li>
-                  {/* Colocar Link */}
-                  <a href="#">Capacitação</a>
+                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="blank_">Capacitação</a>
                 </li>
               </ul>
             </Col>
@@ -37,12 +38,14 @@ export default function Rodape() {
               <div className="h5 pb-2">Nova Trilha</div>
               <ul>
                 <li>
-                  <a href="/Login">Entrar</a>
+                  <a href="/login">Entrar</a>
                 </li>
                 <li>
-                  <a href="Cadastro">Cadastre-se</a>
+                  <a href="cadastro">Cadastre-se</a>
                 </li>
-                <li title="#">Para Empresas</li>
+                <li>
+                  <a href="#">Para Empresas</a>
+                </li>
               </ul>
             </Col>
 
@@ -51,23 +54,25 @@ export default function Rodape() {
               <div className="h5 pb-2">Suporte</div>
               <ul>
                 <li>
-                  <a href="#">Fale Conosco</a>
+                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="blank_">Fale Conosco</a>
                 </li>
                 <li>
-                  <a href="/Parceiros">Parceiros</a>
+                  <a href="/parceiros">Parceiros</a>
                 </li>
-                <li title="#">Sobre Nós</li>
+                <li>
+                  <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="blank_">Sobre Nós</a>
+                </li>
               </ul>
             </Col>
 
 
             <Col className="m-auto" sm={12} md={3} lg={3}>
               <div className="text-center">
-                <a href="" target="_blank" title="LinkedIn" className="linkedin"><i
+                <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" title="LinkedIn" className="linkedin"><i
                   className="fa fa-3x mx-2 fa-linkedin text-light"></i></a>
-                <a href="" target="_blank" title="Facebook" className="facebook"><i
+                <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" title="Facebook" className="facebook"><i
                   className="fa fa-3x mx-2 fa-facebook text-light"></i></a>
-                <a href="" target="_blank" title="Twitter" className="twitter"><i
+                <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" title="Twitter" className="twitter"><i
                   className="fa fa-3x mx-2 fa-twitter text-light"></i></a>
               </div>
             </Col>
