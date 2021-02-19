@@ -20,7 +20,7 @@ export default function Carrousel() {
                     src={horizonte}
                     alt="First slide" />
                 <Carousel.Caption className="justify-content-center d-none d-md-block color-dark p-2 rounded-pill">
-                    <h1 className="h1">Oportunidade</h1>
+                    <h1 className="h1">Diferencial</h1>
                     <h6 className="h6">Propostas de emprego aqui cadastradas estão visíveis ao
                     usuário, tendo as vagas exclusividade em contratar candidatas
                     Egressas do Sistema Prisional.</h6>
@@ -34,7 +34,7 @@ export default function Carrousel() {
                     alt="Second slide"
                 />
                 <Carousel.Caption className="justify-content-center d-none d-md-block color-dark p-2 rounded-pill">
-                    <h1 className="h1">Vantagem</h1>
+                    <h1 className="h1">Oportunidade</h1>
                     <h6 className="h6">Com o site  "Nova Trilha" é possível que egressas possam encontrar oportunidades de trabalho de acordo com seus perfis.
                     A grande vantagem do "Nova Trilha" é o viés social voltado para a inclusão profissional de egressas.</h6>
                 </Carousel.Caption>
@@ -47,11 +47,11 @@ export default function Carrousel() {
                     alt="Third slide"
                 />
                 <Carousel.Caption className="justify-content-center d-none d-md-block color-dark p-2 rounded-pill">
-                    <h1 className="h1">Diferencial</h1>
-                    <h6 className="h6"></h6>
+                    <h1 className="h1">Parcerias</h1>
+                    <h6 className="h6">O Programa "Nova Trilha" oferece parcerias com instituiçoẽs experientes no âmbito de contratação de candidatas egressas, estabelecendo conexões com empresas contratantes com esse perfil social.</h6>
                 </Carousel.Caption>
             </Carousel.Item>
-            
+
         </Carousel>
     );
 }
