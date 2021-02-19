@@ -1,6 +1,8 @@
 import { Navbar, Nav, Button, Container, Image } from 'react-bootstrap';
 import { Link, withRouter } from 'react-router-dom';
 import './Menu.css';
+import novatrilha from '../../assets/img/nova-trilha-logo2.png';
+
 
 function Menu(props) {
     const { location } = props;
@@ -20,9 +22,9 @@ function Menu(props) {
     return (
 
         <>
-            <Navbar className="navbar-dark py-2 bg-danger text-center" expand="lg">
+            <Navbar className="navbar-dark py-2 bg-info text-center" expand="lg">
                 <Navbar.Brand as={Link} to="/">
-                    <img src="/assets/img/nova-trilha-logo-white.png" alt="Nova-Trilha" width="70px" title="&copy; Nova Trilha" className="shadow-sm bg-light rounded" />
+                    <Image src={novatrilha} alt="Nova-Trilha" width="70px" title="&copy; Nova Trilha" className="shadow-sm rounded" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -48,14 +50,14 @@ function Menu(props) {
                                             <div className="m-auto h4 shadow-sm text-white rounded">
                                                 <i className="fas fa-user-circle" title={nomeLogin}></i> {nomeLogin}
                                             </div>
-                                            <Button to="/" as={Link} className="btn-light ml-5 text-danger" title="Clique para sair">Logout</Button>
+                                            <Button to="/" as={Link} className="btn-light ml-5 text-info" title="Clique para sair">Logout</Button>
                                         </>
                                     )
                                 } else {
                                     return (
                                         <>
-                                            <Button to="/login" as={Link} className="btn-light mx-1 text-danger">Entrar</Button>
-                                            <Button to="/cadastro" as={Link} className="btn-danger btn-outline-light mx-1">Cadastro</Button>
+                                            <Button to="/login" as={Link} className="btn-light mx-1 text-dark">Entrar</Button>
+                                            <Button to="/cadastro" as={Link} className="btn-info btn-outline-light mx-1">Cadastro</Button>
                                         </>
 
                                     )
