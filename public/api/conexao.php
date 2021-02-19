@@ -4,13 +4,12 @@ header("Access-Control-Allow-Methods: GET, POST, DELETE, HEAD, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-type: application/json");
 
-/* Servidor Local
-$servername = "localhost";
+
+/* $servername = "localhost";
 $username = "admin";
 $password = "1234";
-$dbname = "nova-trilha";
- */
-
+$dbname = "nova-trilha"; */
+ 
 $servername = "sql202.epizy.com";
 $username = "epiz_27734971";
 $password = "I7TIi8t187BLk";
@@ -25,5 +24,5 @@ if ($conn->connect_error) {
 
 $build = "http://novatrilha.infinityfreeapp.com";
 
-/* Servidor Local
- $build = "http://localhost:3000/"; */
+ /* 
+ $build = "http://localhost:3000";  */

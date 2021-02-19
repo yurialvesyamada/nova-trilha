@@ -3,7 +3,7 @@ include("./conexao.php");
 
 if(empty($_POST['email']) || empty($_POST['senha'])  ){
  
-  header("Refresh: 0;url=$build/login?erro=vazio");
+  header("Refresh: 0;url=$build?erro=vazio");
   exit();
 }
 
@@ -29,12 +29,12 @@ if(empty($_POST['email']) || empty($_POST['senha'])  ){
     echo "0 results";
   }
     
-    header("Refresh: 0;url=$build/vagas?nome=$nome");
+    header("Refresh: 0;url=$build?nome=$nome");
 
 
   } else {
     
-    header("Refresh: 0;url=$build/login?erro=senha");
+    header("Refresh: 0;url=$build?erro=senha");
 
 
   }

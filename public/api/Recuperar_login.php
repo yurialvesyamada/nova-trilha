@@ -3,7 +3,7 @@ include("./conexao.php");
 
 if(empty($_POST['email']) ){
  
-  header("Refresh: 0;url=$build/recuperar-senha?erro=vazio4");
+  header("Refresh: 0;url=$build?erro=vazio4");
   exit();
 }
 
@@ -14,10 +14,10 @@ if(empty($_POST['email']) ){
 
 
   if( $result ->num_rows > 0 ) {
-    header("Refresh: 0;url=$build/recuperar-senha?erro=email");  
-    header("Refresh: 0;url=$build/login?erro=email");
+    header("Refresh: 0;url=$build?erro=email");  
+    header("Refresh: 0;url=$build?erro=email");
   } else {
-    header("Refresh: 0;url=$build/recuperar-senha?erro=errado");  
+    header("Refresh: 0;url=$build?erro=errado");  
   }
 $conn->close();
 ?>

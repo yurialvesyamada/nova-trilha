@@ -2,7 +2,7 @@
 include("./conexao.php");
 
 if(empty($_POST['email']) || empty($_POST['senha'])  ){
-    header("Refresh: 0;url=$build/cadastro?erro=vazio1");
+    header("Refresh: 0;url=$build?erro=vazio1");
     exit();
 }
 
@@ -22,13 +22,13 @@ if (isset($_POST['cadastrar'])) {
     
     if( $result ->num_rows > 0 ) {
       
-        header("Refresh: 0;url=$build/cadastro?erro=existe");
+        header("Refresh: 0;url=$build?erro=existe");
       
     } else{
       
         $sql = "insert into usuario (nome,  email, senha, telefone, endereco) values ('$nome', '$email', '$senha','$telefone', '$endereco')";
         $insert = $conn->query($sql);
         $conn->close();
-        header("Refresh: 0;url=$build/vagas?erro=cadastro&?nome=$nome");
+        header("Refresh: 0;url=$build?erro=cadastro&?nome=$nome");
     }
 }
