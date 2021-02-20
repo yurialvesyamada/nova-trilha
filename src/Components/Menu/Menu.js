@@ -58,7 +58,8 @@ function Menu(props) {
                                     )
                                 } else {
                                     return (
-                                        <>
+                                        <>  
+                                          <Button to="/Cadastro_empresa" as={Link} className="btn-light mx-1 text-dark">Cadastrar empresa</Button>
                                             <Button to="/login" as={Link} className="btn-light mx-1 text-dark">Entrar</Button>
                                             <Button to="/cadastro" as={Link} className="btn-info btn-outline-light mx-1">Cadastro</Button>
                                         </>

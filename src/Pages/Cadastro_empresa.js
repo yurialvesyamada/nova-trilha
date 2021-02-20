@@ -1,4 +1,4 @@
-import { React } from 'react';
+import { React} from 'react';
 import { Form, Col, InputGroup, FormControl, Button, Container, Row, Image } from "react-bootstrap";
 import Erro from '../Components/Erro/Erro';
 import './Pages.css';
@@ -6,9 +6,9 @@ import { useSelector } from 'react-redux';
 import novatrilha from '../assets/img/nova-trilha-logo.png';
 
 
-export default function Cadastro() {
+export default function Cadastro_empresa() {
     const caminho = useSelector(state => state.caminho.caminho)
-
+ 
     return (
         <>
             <Erro />
@@ -21,13 +21,28 @@ export default function Cadastro() {
                             </a>
                         </Col>
 
-                        <Form className="px-5 m-3" method="POST" action={caminho + "/api/cadastro.php"}>
-                            <h1 className="py-4 h1 text-info">Cadastro</h1>
+
+                        <Form className="px-5 m-3" method="POST" action={caminho + "/api/Cadastro_empresa.php"}>
+                            <h1 className="py-4 h1 text-info">Cadastrar Empresa</h1>
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-user" title="Username"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
-                                <FormControl name="nome" type="name" id="inlineFormInputGroup" placeholder="Nome" required />
+                                <FormControl name="nome" type="name" id="inlineFormInputGroup" placeholder="Razão social" required />
+                            </InputGroup>
+
+                            <InputGroup className="pb-4">
+                                <InputGroup.Prepend>
+                                    <InputGroup.Text><i className="fas fa-mobile-alt"></i></InputGroup.Text>
+                                </InputGroup.Prepend>
+                                <FormControl name="cnpj" type="text" minLength="1" maxLength="12" id="inlineFormInputGroup3" placeholder="CNPJ" required />
+                            </InputGroup>
+
+                            <InputGroup className="pb-4">
+                                <InputGroup.Prepend>
+                                    <InputGroup.Text><i className="fas fa-map-marker-alt"></i></InputGroup.Text>
+                                </InputGroup.Prepend>
+                                <FormControl name="Ramo_atividade" type="text" id="inlineFormInputGroup4" placeholder="Ramo de atividade" required />
                             </InputGroup>
 
                             <InputGroup className="pb-4">
@@ -48,7 +63,14 @@ export default function Cadastro() {
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-mobile-alt"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
-                                <FormControl name="telefone" type="number" minLength="1" maxLength="12" id="inlineFormInputGroup3" placeholder="Telefone" required />
+                                <FormControl name="data_abertura" type="text" minLength="1" maxLength="12" id="inlineFormInputGroup3" placeholder="Data de abertura" required />
+                            </InputGroup>
+
+                            <InputGroup className="pb-4">
+                                <InputGroup.Prepend>
+                                    <InputGroup.Text><i className="fas fa-mobile-alt"></i></InputGroup.Text>
+                                </InputGroup.Prepend>
+                                <FormControl name="telefone" type="text" minLength="1" maxLength="12" id="inlineFormInputGroup3" placeholder="Telefone" required />
                             </InputGroup>
 
                             <InputGroup className="pb-4">
@@ -57,6 +79,8 @@ export default function Cadastro() {
                                 </InputGroup.Prepend>
                                 <FormControl name="endereco" type="adress" id="inlineFormInputGroup4" placeholder="Endereço" required />
                             </InputGroup>
+
+                           
 
                             <div>
                                 <Col className="pb-3">
