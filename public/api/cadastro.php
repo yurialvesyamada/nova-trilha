@@ -18,7 +18,7 @@ if (isset($_POST['cadastrar'])) {
     $funcao = $_POST['funcao'];
 
   
-    $sql = "SELECT * FROM empresa  WHERE `email` = '{$email}'  limit 1"; 
+    $sql = "SELECT * FROM usuario  WHERE `email` = '{$email}'  limit 1"; 
 
 
     $result = $conn->query($sql); 

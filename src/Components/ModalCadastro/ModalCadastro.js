@@ -26,7 +26,7 @@ export default function ModalCadastro() {
           
                  <div className=" mx-auto d-inline">
                  <Button to="/Cadastro" as={Link} className="btn-light rounded-pill text-info"  onClick={handleClose}>
-                    Usuário Comun
+                   Candidata
                   </Button>
                  </div>
 
