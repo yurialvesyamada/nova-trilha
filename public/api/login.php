@@ -20,9 +20,6 @@ if(empty($_POST['email']) || empty($_POST['senha'])  ){
             or e.`email`= '{$email}'
 			      and e.`senha` = '{$senha}'";
 
-
-
-
    $result = $conn->query($sql); 
 
   if( $result ->num_rows > 0 ) {

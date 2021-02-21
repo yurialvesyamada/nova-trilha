@@ -78,9 +78,7 @@ export default function Cadastro_empresa() {
                                     <InputGroup.Text><i className="fas fa-map-marker-alt"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
                                 <FormControl name="endereco" type="adress" id="inlineFormInputGroup4" placeholder="Endereço" required />
-                            </InputGroup>
-
-                           
+                            </InputGroup>              
 
                             <div>
                                 <Col className="pb-3">
