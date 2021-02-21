@@ -43,7 +43,7 @@ function Menu(props) {
                     </Nav>
 
                     <Container fluid>
-                        <Nav.Item className="ml-auto">
+                        <Nav.Item className="mx-auto mr-md-0">
                             {(() => {
                                 if (nomeLogin) {
                                     return (
@@ -60,9 +60,8 @@ function Menu(props) {
                                 } else {
                                     return (
                                         <>
-
-                                            <Button to="/login" as={Link} className="btn-light rounded-pill  mx-1 text-info">Entrar</Button>
-                                            <ModalCadastro onClick={ModalCadastro.handleShow} className="mx-1">Cadastro</ModalCadastro>
+                                            <Button to="/login" as={Link} variant="outline-light" className="rounded mx-2 text-light col-md-6">Entrar</Button>
+                                            <ModalCadastro onClick={ModalCadastro.handleShow} className="mx-2">Cadastro</ModalCadastro>
                                         </>
 
                                     )
@@ -78,6 +77,7 @@ function Menu(props) {
 }
 
 export default withRouter(Menu);
+
 
 
 

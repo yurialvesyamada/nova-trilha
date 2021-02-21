@@ -28,3 +28,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.icon {
+    width: 20px;
+}

@@ -31,7 +31,7 @@ if (isset($_POST['cadastrar'])) {
 
         $sql = "insert into usuario (nome,  email, senha, telefone, endereco,escolaridade,funcao)
          values ('$nome', '$email', '$senha','$telefone', '$endereco','$escolaridade','$funcao')";
-        header("Refresh: 0;url=$build?erro=cadastro&?nome=$nome");
+        header("Refresh: 0;url=$build");
 
     if ($conn->multi_query($sql) === TRUE) {
     echo "New records created successfully";

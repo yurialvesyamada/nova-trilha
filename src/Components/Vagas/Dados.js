@@ -13,7 +13,7 @@ export default function Dados(props) {
         } else {
 
             setFundo("success")
-            setTexto("Candidatado")
+            setTexto("Candidatada")
         }
     }
 

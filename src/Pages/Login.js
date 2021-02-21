@@ -22,7 +22,7 @@ export default function Login() {
                             </a>
                         </Col>
 
-                        <Form className="px-5 m-3" method="POST" action={caminho + "/api/login.php"}>
+                        <Form className="px-md-5" method="POST" action={caminho + "/api/login.php"}>
                             <h1 className="py-4 h1 text-light">Login</h1>
 
                             <InputGroup className="pb-4">
@@ -40,12 +40,11 @@ export default function Login() {
                             </InputGroup>
 
                             <div>
-                                <Col className="pb-3">
-                                    <Button className="px-5 rounded-pill" type="submit" name="entrar" value="entrar" variant="info">Entrar</Button>{' '}
+                                <Col md={4} className="py-3 mx-auto">
+                                    <Button className="rounded w-100" type="submit" name="entrar" value="entrar" variant="info">Entrar</Button>{' '}
                                 </Col>
-                                <Col className="pb-3">
-                                <ModalCadastro  onClick={ModalCadastro.handleShow} className="mx-1 px-3 ">Cadastro</ModalCadastro>
-                                   {/*  <Button href="cadastro" className="px-3 rounded-pill text-info" type="submit" name="cadastro" variant="light">Cadastrar</Button>{' '} */}
+                                <Col md={3} className="py-3 mx-auto">
+                                    <ModalCadastro onClick={ModalCadastro.handleShow}>Cadastro</ModalCadastro>
                                 </Col>
                             </div>
                         </Form>
