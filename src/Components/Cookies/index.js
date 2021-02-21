@@ -1,20 +1,29 @@
-import {CookiePopup} from "@larsroettig/react-cookie-popup";
+/*import {CookiePopup} from "@larsroettig/react-cookie-popup";
+import { Link, withRouter } from 'react-router-dom';*/
 import { Link, withRouter } from 'react-router-dom';
+import CookieConsent from "react-cookie-consent";
 
 
 export default function Cookies1() {
 
     return (
 <>
-<CookiePopup /*PopupProps={{"classAcceptButton": "text-dark"}}*/>
-    <section>
-        <h4 className="py-5 text-xl">
-               Clique para aceitar as políticas de Cookies e Privacidade
-               <br/><br/><a href="/Politica_de_privacidade">Política de Privacidade</a>
-               <br/><br/><a href="/Termos_de_uso">Termos de Uso</a>
-        </h4>
-    </section>
-</CookiePopup>
+<CookieConsent
+  location="bottom"
+  buttonText="ACEITAR"
+  cookieName="myAwesomeCookieName2"
+  style={{ background: "white" }}
+  buttonStyle={{ background: "#6BA4B8", color: "white", fontSize: "13px"}}
+  expires={150}
+>
+<div className="text-center text-dark">Clique para ACEITAR as políticas de Cookies e Privacidade.</div>
+<div className="text-center text-dark">
+<Link to="/Politica_de_privacidade">Política de Privacidade</Link> | 
+<Link to="/Termos_de_uso">Termos de Uso</Link>
+</div>
+  <span style={{ fontSize: "10px" }}></span>
+</CookieConsent>
+
 </>
     );
 }
