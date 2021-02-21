@@ -58,6 +58,22 @@ export default function Cadastro() {
                                 <FormControl name="endereco" type="adress" id="inlineFormInputGroup4" placeholder="Endereço" required />
                             </InputGroup>
 
+                            <InputGroup className="pb-4">
+                                <InputGroup.Prepend>
+                                    <InputGroup.Text><i className="fas fa-map-marker-alt"></i></InputGroup.Text>
+                                </InputGroup.Prepend>
+                                <FormControl name="escolaridade" type="text" id="inlineFormInputGroup4" placeholder="Escolaridade" required />
+                            </InputGroup>
+
+                            <InputGroup className="pb-4">
+                                <InputGroup.Prepend>
+                                    <InputGroup.Text><i className="fas fa-map-marker-alt"></i></InputGroup.Text>
+                                </InputGroup.Prepend>
+                                <FormControl name="funcao" type="text" id="inlineFormInputGroup4" placeholder="Função" required />
+                            </InputGroup>
+
+
+
                             <div>
                                 <Col className="pb-3">
                                     <Button className="px-5 rounded-pill" type="submit" name="cadastrar" variant="info">Cadastrar</Button>{' '}

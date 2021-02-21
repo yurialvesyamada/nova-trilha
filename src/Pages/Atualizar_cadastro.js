@@ -81,7 +81,7 @@ export default function Atualizar_cadastro() {
 
                             </div>
                         </Form>
-                        <Link to="/Deletar_usuario" className="h5">Excluir Usuário</Link>
+                        <Link to="/Deletar_usuario" className="h5">Excluir cadastro</Link>
                     </Col>
                 </Row>
             </Container>

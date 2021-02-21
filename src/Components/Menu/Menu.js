@@ -1,8 +1,11 @@
-import { Navbar, Nav, Button, Container, Image } from 'react-bootstrap';
+import { Navbar, Nav, Button, Container, Image, Modal} from 'react-bootstrap';
 import { Link, withRouter } from 'react-router-dom';
 import './Menu.css';
 import novatrilha from '../../assets/img/nova-trilha-logo2.png';
-import woman from '../../assets/img/woman.jpg';
+import woman from '../../assets/img/woman.jpg';   
+import ModalCadastro from '../ModalCadastro/ModalCadastro';
+
+
 
 
 function Menu(props) {
@@ -59,9 +62,9 @@ function Menu(props) {
                                 } else {
                                     return (
                                         <>  
-                                          <Button to="/Cadastro_empresa" as={Link} className="btn-light mx-1 text-dark">Cadastrar empresa</Button>
-                                            <Button to="/login" as={Link} className="btn-light mx-1 text-dark">Entrar</Button>
-                                            <Button to="/cadastro" as={Link} className="btn-info btn-outline-light mx-1">Cadastro</Button>
+                                         
+                                            <Button to="/login" as={Link} className="btn-light rounded-pill  mx-1 text-info">Entrar</Button>
+                                            <ModalCadastro  onClick={ModalCadastro.handleShow} className="mx-1">Cadastro</ModalCadastro>
                                         </>
 
                                     )

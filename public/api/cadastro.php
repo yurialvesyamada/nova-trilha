@@ -14,8 +14,10 @@ if (isset($_POST['cadastrar'])) {
     $senha = $_POST['senha'];
     $telefone = $_POST['telefone'];
     $nome_cliente = $_POST['endereco'];
+    $escolaridade = $_POST['escolaridade'];
+    $funcao = $_POST['funcao'];
 
-
+  
     $sql = "SELECT * FROM empresa  WHERE `email` = '{$email}'  limit 1"; 
 
 
@@ -25,11 +27,12 @@ if (isset($_POST['cadastrar'])) {
       
         header("Refresh: 0;url=$build?erro=existe");
       
-    } else{
+    } else{ 
 
 
 
-        $sql = "insert into usuario (nome,  email, senha, telefone, endereco) values ('$nome', '$email', '$senha','$telefone', '$endereco')";
+        $sql = "insert into usuario (nome,  email, senha, telefone, endereco,escolaridade,funcao)
+         values ('$nome', '$email', '$senha','$telefone', '$endereco','$escolaridade','$funcao')";
         header("Refresh: 0;url=$build?erro=cadastro&?nome=$nome");
 
     if ($conn->multi_query($sql) === TRUE) {
