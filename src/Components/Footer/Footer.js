@@ -52,6 +52,9 @@ function Footer() {
 
             <div className="h2 pb-2">Suporte</div>
             <ul>
+            <li>
+                <Link to="/Cadastro_empresa">Cadastrar Empresa</Link>
+              </li>
               <li>
                 <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer">Fale Conosco</a>
               </li>

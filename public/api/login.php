@@ -7,8 +7,6 @@ if(empty($_POST['email']) || empty($_POST['senha'])  ){
   exit();
 }
 
-
- 
   $email = filter_input(INPUT_POST, 'email');
   $senha = filter_input(INPUT_POST, 'senha');
   
