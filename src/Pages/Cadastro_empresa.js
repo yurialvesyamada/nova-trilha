@@ -40,7 +40,7 @@ export default function Cadastro_empresa() {
 
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
-                                    <InputGroup.Text><i className="fas fa-map-marker-alt"></i></InputGroup.Text>
+                                    <InputGroup.Text><i class="far fa-building"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
                                 <FormControl name="Ramo_atividade" type="text" id="inlineFormInputGroup4" placeholder="Ramo de atividade" required />
                             </InputGroup>
@@ -61,7 +61,7 @@ export default function Cadastro_empresa() {
 
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
-                                    <InputGroup.Text><i className="fas fa-mobile-alt"></i></InputGroup.Text>
+                                    <InputGroup.Text><i class="far fa-calendar-alt"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
                                 <FormControl name="data_abertura" type="text" minLength="1" maxLength="12" id="inlineFormInputGroup3" placeholder="Data de abertura" required />
                             </InputGroup>
@@ -78,9 +78,7 @@ export default function Cadastro_empresa() {
                                     <InputGroup.Text><i className="fas fa-map-marker-alt"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
                                 <FormControl name="endereco" type="adress" id="inlineFormInputGroup4" placeholder="Endereço" required />
-                            </InputGroup>
-
-                           
+                            </InputGroup>              
 
                             <div>
                                 <Col className="pb-3">
