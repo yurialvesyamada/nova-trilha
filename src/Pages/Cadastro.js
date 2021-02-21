@@ -60,14 +60,14 @@ export default function Cadastro() {
 
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
-                                    <InputGroup.Text><i className="fas fa-map-marker-alt"></i></InputGroup.Text>
+                                    <InputGroup.Text><i class="fas fa-graduation-cap"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
                                 <FormControl name="escolaridade" type="text" id="inlineFormInputGroup4" placeholder="Escolaridade" required />
                             </InputGroup>
 
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
-                                    <InputGroup.Text><i className="fas fa-map-marker-alt"></i></InputGroup.Text>
+                                    <InputGroup.Text><i class="fas fa-user-tie"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
                                 <FormControl name="funcao" type="text" id="inlineFormInputGroup4" placeholder="Função" required />
                             </InputGroup>

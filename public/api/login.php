@@ -26,7 +26,6 @@ if(empty($_POST['email']) || empty($_POST['senha'])  ){
  
   if ($result->num_rows > 0) {
     $name = "SELECT nome FROM usuario  WHERE `email` = '{$email}'limit 1"; 
-    //$name = "SELECT nome FROM empresa  WHERE `email` = '{$email}'limit 1"; 
     $result = $conn->query($name); 
    
     while($row = $result->fetch_assoc()) {
@@ -36,15 +35,12 @@ if(empty($_POST['email']) || empty($_POST['senha'])  ){
   } else {
     echo "0 results";
   }
-    
+  
     header("Refresh: 0;url=$build?nome=$nome");
-
 
   } else {
     
     header("Refresh: 0;url=$build?erro=senha");
-
-
   }
 $conn->close();
 ?>
