@@ -2,11 +2,12 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import './Footer.css';
 import { Link, withRouter } from 'react-router-dom';
 import novatrilha from '../../assets/img/nova-trilha-logo2.png';
-
+import Cookies1 from '../Cookies/index';
 
 function Footer() {
   return (
     <>
+      <Cookies1/>
       <Container className="text-white link-white p-5 bg-info" fluid>
         <Row className="text-center">
           <Col className="pb-3" sm={12} md={3} lg={3}>
