@@ -10,15 +10,16 @@ if(empty($_POST['email']) || empty($_POST['senha'])  ){
 
 if (isset($_POST['cadastrar'])) {
     $nome = $_POST['nome'];
+    $cnpj = $_POST['cnpj'];
+    $Ramo_atividade = $_POST['Ramo_atividade'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
+    $data_abertura = $_POST['data_abertura'];
     $telefone = $_POST['telefone'];
     $nome_cliente = $_POST['endereco'];
-    $escolaridade = $_POST['escolaridade'];
-    $funcao = $_POST['funcao'];
 
-  
-    $sql = "SELECT * FROM usuario  WHERE `email` = '{$email}'  limit 1"; 
+
+    $sql = "SELECT * FROM empresa  WHERE `email` = '{$email}'  limit 1"; 
 
 
     $result = $conn->query($sql); 
@@ -27,12 +28,13 @@ if (isset($_POST['cadastrar'])) {
       
         header("Refresh: 0;url=$build?erro=existe");
       
-    } else{ 
+    } else{
 
 
 
-        $sql = "insert into usuario (nome,  email, senha, telefone, endereco,escolaridade,funcao)
-         values ('$nome', '$email', '$senha','$telefone', '$endereco','$escolaridade','$funcao')";
+    $sql = "insert into empresa (nome, cnpj, Ramo_atividade, email, senha, data_abertura, telefone, endereco)
+        values ('$nome', '$cnpj', '$Ramo_atividade',  '$email', '$senha','$data_abertura','$telefone', '$endereco')";
+
         header("Refresh: 0;url=$build?erro=cadastro&?nome=$nome");
 
     if ($conn->multi_query($sql) === TRUE) {
@@ -46,5 +48,3 @@ if (isset($_POST['cadastrar'])) {
 
 }
 ?>
-
- 

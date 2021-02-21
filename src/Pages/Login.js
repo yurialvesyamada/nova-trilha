@@ -4,6 +4,7 @@ import Erro from '../Components/Erro/Erro';
 import './Pages.css';
 import { useSelector } from 'react-redux';
 import novatrilha from '../assets/img/nova-trilha-logo.png';
+import ModalCadastro from '../Components/ModalCadastro/ModalCadastro';
 
 export default function Login() {
     const caminho = useSelector(state => state.caminho.caminho)
@@ -43,7 +44,8 @@ export default function Login() {
                                     <Button className="px-5 rounded-pill" type="submit" name="entrar" value="entrar" variant="info">Entrar</Button>{' '}
                                 </Col>
                                 <Col className="pb-3">
-                                    <Button href="cadastro" className="px-3 rounded-pill text-info" type="submit" name="cadastro" variant="light">Cadastrar</Button>{' '}
+                                <ModalCadastro  onClick={ModalCadastro.handleShow} className="mx-1 px-3 ">Cadastro</ModalCadastro>
+                                   {/*  <Button href="cadastro" className="px-3 rounded-pill text-info" type="submit" name="cadastro" variant="light">Cadastrar</Button>{' '} */}
                                 </Col>
                             </div>
                         </Form>
