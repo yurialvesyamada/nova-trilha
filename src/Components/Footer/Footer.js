@@ -7,7 +7,7 @@ import Cookies1 from '../Cookies/index';
 function Footer() {
   return (
     <>
-      <Cookies1/>
+      <Cookies1 />
       <Container className="text-white link-white p-5 bg-info" fluid>
         <Row className="text-center">
           <Col className="pb-3" sm={12} md={3} lg={3}>
@@ -53,7 +53,7 @@ function Footer() {
 
             <div className="h2 pb-2">Suporte</div>
             <ul>
-            <li>
+              <li>
                 <Link to="/Cadastro_empresa">Cadastrar Empresa</Link>
               </li>
               <li>
@@ -63,7 +63,6 @@ function Footer() {
               <li>
                 <a href="https://www.facebook.com/Nova-Trilha-106093058111607" target="_blank" rel="noopener noreferrer">Sobre Nós</a>
               </li>
-              <br />
             </ul>
           </Col>
 

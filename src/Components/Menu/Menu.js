@@ -1,11 +1,9 @@
-import { Navbar, Nav, Button, Container, Image, Modal} from 'react-bootstrap';
+import { Navbar, Nav, Button, Container, Image } from 'react-bootstrap';
 import { Link, withRouter } from 'react-router-dom';
 import './Menu.css';
 import novatrilha from '../../assets/img/nova-trilha-logo2.png';
-import woman from '../../assets/img/woman.jpg';   
+import woman from '../../assets/img/woman.jpg';
 import ModalCadastro from '../ModalCadastro/ModalCadastro';
-
-
 
 
 function Menu(props) {
@@ -53,7 +51,7 @@ function Menu(props) {
                                         <>
                                             <div>
                                                 <Link to="/Atualizar_cadastro" className="links text-light h3">
-                                                      <Image src={woman} className="woman_img mr-3" roundedCircle/>  {nomeLogin}
+                                                    <Image src={woman} className="woman_img mr-3" roundedCircle />  {nomeLogin}
                                                 </Link>
                                             </div>
                                             <Button to="/" as={Link} className="btn-light ml-5 my-auto text-info" title="Clique para sair">Logout</Button>
@@ -61,10 +59,10 @@ function Menu(props) {
                                     )
                                 } else {
                                     return (
-                                        <>  
-                                         
+                                        <>
+
                                             <Button to="/login" as={Link} className="btn-light rounded-pill  mx-1 text-info">Entrar</Button>
-                                            <ModalCadastro  onClick={ModalCadastro.handleShow} className="mx-1">Cadastro</ModalCadastro>
+                                            <ModalCadastro onClick={ModalCadastro.handleShow} className="mx-1">Cadastro</ModalCadastro>
                                         </>
 
                                     )
