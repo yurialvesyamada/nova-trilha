@@ -29,8 +29,6 @@ if (isset($_POST['cadastrar'])) {
       
     } else{ 
 
-
-
         $sql = "insert into usuario (nome,  email, senha, telefone, endereco,escolaridade,funcao)
          values ('$nome', '$email', '$senha','$telefone', '$endereco','$escolaridade','$funcao')";
         header("Refresh: 0;url=$build?erro=cadastro&?nome=$nome");
