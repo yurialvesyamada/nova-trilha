@@ -22,23 +22,23 @@ export default function Delete_usuario() {
                             </a>
                         </Col>
 
-                        <Form className="px-5 m-3" method="POST" action={caminho + "/api/deletar_usuario.php"}>
+                        <Form className="px-md-5" method="POST" action={caminho + "/api/deletar_usuario.php"}>
 
 
                             <h1 className="py-4 h1 text-dark">Deletar Usuário</h1>
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
-                                    <InputGroup.Text><i className="fas fa-envelope" title="E-mail"></i></InputGroup.Text>
+                                    <InputGroup.Text><i className="icon fas fa-envelope" title="E-mail"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
                                 <FormControl name="email" type="email" id="inlineFormInputGroup" placeholder="E-mail" required />
                             </InputGroup>
 
                             <div>
-                                <Col className="pb-3">
-                                    <Button className="px-5 rounded-pill" type="submit" name="confirmar" value="confirmar" variant="info">Confirmar</Button>{' '}
+                                <Col md={4} className="py-3 mx-auto">
+                                    <Button className="w-100 rounded" type="submit" name="confirmar" value="confirmar" variant="info">Confirmar</Button>{' '}
                                 </Col>
-                                <Col className="pb-3">
-                                    <Button href="/" className="px-4 rounded-pill text-info" type="submit" name="cancelar" variant="light">Cancelar</Button>{' '}
+                                <Col md={4}/*  xs={10} */ className="py-3 mx-auto">
+                                    <Button href="/" className="w-100 text-info rounded" type="submit" name="cancelar" variant="light">Cancelar</Button>{' '}
                                 </Col>
                             </div>
                         </Form>
