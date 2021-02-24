@@ -21,15 +21,15 @@ export default function Routes() {
             <Route exact path="/Vagas" component={Vagas} />
             <Route exact path="/Login" component={Login} />
             <Route exact path="/Cadastro" component={Cadastro} />
-            <Route exact path="/Recuperar-senha" component={Recuperar_login} />
+            <Route exact path="/recuperar-senha" component={Recuperar_login} />
             <Route exact path="/Parceiros" component={Parceiros} />
             <Route exact path="/Deletar_usuario" component={Deletar_usuario} />
             <Route exact path="/Atualizar_cadastro" component={Atualizar_cadastro} />
             <Route exact path="/Company" component={Empresas} />
             <Route exatc path="/Candidatas" component={Candidatas} />
             <Route exatc path="/Cadastro_empresa" component={Cadastro_empresa} />
-            <Route exatc path="/Politica_de_privacidade" component={Privacidade} />
-            <Route exatc path="/Termos_de_uso" component={Termos} />
+            <Route exatc path="/privacidade" component={Privacidade} />
+            <Route exatc path="/termos" component={Termos} />
         </Switch>
     );
 }

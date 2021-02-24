@@ -4,6 +4,7 @@ import Erro from '../Components/Erro/Erro';
 import './Pages.css';
 import { useSelector } from 'react-redux';
 import novatrilha from '../assets/img/nova-trilha-logo.png';
+import { Link } from 'react-router-dom';
 
 
 export default function Cadastro() {
@@ -12,7 +13,7 @@ export default function Cadastro() {
     return (
         <>
             <Erro />
-            <Container className="text-center text-dark links" fluid>
+            <Container className="text-center text-dark" fluid>
                 <Row className="background py-5">
                     <Col md={6} lg={6} className="mx-auto rounded">
                         <Col className="mx-auto my-5" sm={12} md={6} lg={6}>
@@ -22,7 +23,7 @@ export default function Cadastro() {
                         </Col>
 
                         <Form className="px-md-5" method="POST" action={caminho + "/api/cadastro.php"}>
-                            <h1 className="py-4 h1 text-info">Cadastro</h1>
+                            {/* <h1 className="py-4 text-dark fonts h1">Cadastro</h1> */}
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-user icon" title="Username"></i></InputGroup.Text>
@@ -93,8 +94,10 @@ export default function Cadastro() {
                                 </Col>
                             </div>
                         </Form>
-                        <div className="h4 py-3 text-light">
-                            <h4>Já tem Cadastro? <a href="/login" className="border-bottom">Entre aqui.</a></h4>
+                        <div className="py-3 h4 links text-light">
+                            <h4>Já tem Cadastro?
+                                <Link to="/login" className="border-bottom"> Entre aqui.</Link>
+                            </h4>
                         </div>
                     </Col>
                 </Row>

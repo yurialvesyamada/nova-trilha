@@ -5,6 +5,7 @@ import './Pages.css';
 import { useSelector } from 'react-redux';
 import novatrilha from '../assets/img/nova-trilha-logo.png';
 import ModalCadastro from '../Components/ModalCadastro/ModalCadastro';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
     const caminho = useSelector(state => state.caminho.caminho)
@@ -12,7 +13,7 @@ export default function Login() {
     return (
         <>
             <Erro />
-            <Container className="text-center links" fluid>
+            <Container className="text-center" fluid>
                 <Row className="background py-5">
                     <Col md={6} lg={6} className="mx-auto rounded">
 
@@ -23,7 +24,7 @@ export default function Login() {
                         </Col>
 
                         <Form className="px-md-5" method="POST" action={caminho + "/api/login.php"}>
-                            <h1 className="py-4 h1 text-light">Login</h1>
+                            <h1 className="py-4 text-dark fonts h1">Login</h1>
 
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
@@ -48,8 +49,8 @@ export default function Login() {
                                 </Col>
                             </div>
                         </Form>
-                        <h4 className="py-3 h4">
-                            <a href="Recuperar-senha">Esqueci a Senha</a>
+                        <h4 className="py-3 h4 links">
+                            <Link to="/recuperar-senha" className="border-bottom">Esqueci a Senha</Link>
                         </h4>
                     </Col>
                 </Row>

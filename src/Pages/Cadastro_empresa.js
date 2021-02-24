@@ -4,6 +4,7 @@ import Erro from '../Components/Erro/Erro';
 import './Pages.css';
 import { useSelector } from 'react-redux';
 import novatrilha from '../assets/img/nova-trilha-logo.png';
+import { Link } from 'react-router-dom';
 
 
 export default function Cadastro_empresa() {
@@ -23,7 +24,7 @@ export default function Cadastro_empresa() {
 
 
                         <Form className="px-md-5" method="POST" action={caminho + "/api/Cadastro_empresa.php"}>
-                            <h1 className="py-4 h1 text-info">Cadastrar Empresa</h1>
+                            {/* <h1 className="py-4 h1 text-info">Cadastrar Empresa</h1> */}
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="icon fas fa-user" title="Username"></i></InputGroup.Text>
@@ -79,8 +80,10 @@ export default function Cadastro_empresa() {
                                 </Col>
                             </div>
                         </Form>
-                        <div className="h4 py-3 text-light">
-                            <h4>Já tem Cadastro? <a href="/login" className="border-bottom">Entre aqui.</a></h4>
+                        <div className="py-3 h4 links text-light">
+                            <h4>Já tem Cadastro?
+                                <Link to="/login" className="border-bottom"> Entre aqui.</Link>
+                            </h4>
                         </div>
                     </Col>
                 </Row>

@@ -14,7 +14,8 @@ body {
 }
 
 .links a {
-    color: whitesmoke;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 html {
@@ -31,4 +32,9 @@ html {
 
 .icon {
     width: 20px;
+}
+
+
+.fonts {
+    font-family: 'Times New Roman', Times, serif;
 }
