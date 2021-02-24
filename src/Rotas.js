@@ -12,6 +12,7 @@ import Candidatas from './Pages/Candidatas';
 import Cadastro_empresa from './Pages/Cadastro_empresa';
 import Privacidade from './Pages/Privacidade';
 import Termos from './Pages/Termos';
+import CadastrarVaga from './Pages/CadastrarVaga';
 
 
 export default function Routes() {
@@ -30,6 +31,7 @@ export default function Routes() {
             <Route exatc path="/Cadastro_empresa" component={Cadastro_empresa} />
             <Route exatc path="/Politica_de_privacidade" component={Privacidade} />
             <Route exatc path="/Termos_de_uso" component={Termos} />
+            <Route exatc path="/CadastrarVaga" component={CadastrarVaga} />
         </Switch>
     );
 }

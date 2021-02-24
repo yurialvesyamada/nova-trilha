@@ -22,18 +22,21 @@ export default function Dados(props) {
     return (
         <>
             <Card className="mx-auto shadow-sm rounded my-4" style={{ width: '22rem' }}>
-                <Card.Img variant="top" src={require(`./empresas-img/${props.imagem}`).default} alt="Empresas Contratantes" className="w-100" />
+               {/*  <Card.Img variant="top" src={require(`./empresas-img/${props.imagem}`).default} alt="Empresas Contratantes" className="w-100" /> */}
                 <Card.Header className="py-4">
                     <Card.Title>
-                        <span className="h3 font-weight-bold">{props.vaga}</span>
+                        <span className="h2 font-weight-bold">{props.vaga}</span>
                     </Card.Title>
                 </Card.Header>
                 <Card.Body className="d-flex flex-column py-5">
                     <Card.Text>
+                        <span className="h3">{props.empregador}</span>
+                    </Card.Text>
+                    <Card.Text>
                         <span className="h5">{props.descricao}</span>
                     </Card.Text>
                     <Card.Text>
-                        <span className="h4">R${props.salario}</span>
+                        <span className="h4">R$ {props.salario}</span>
                     </Card.Text>
                     <Card.Text>
                         <span className="h4">{props.localizacao}</span>

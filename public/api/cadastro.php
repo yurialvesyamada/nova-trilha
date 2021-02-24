@@ -25,7 +25,7 @@ if (isset($_POST['cadastrar'])) {
     
     if( $result ->num_rows > 0 ) {
       
-        header("Refresh: 0;url=$build?erro=existe");
+       header("Refresh: 0;url=$build?erro=existe");
       
     } else{ 
 
@@ -37,8 +37,8 @@ if (isset($_POST['cadastrar'])) {
     echo "New records created successfully";
     } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-
+    } 
+ 
     $conn->close();
     }
 
