@@ -3,6 +3,7 @@ import React from 'react';
 import CadastroVaga from '../Components/Companies/Company';
 import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 export default function Empresas() {
     const caminho = useSelector(state => state.caminho.caminho)
@@ -28,10 +29,10 @@ export default function Empresas() {
                         <h3 className="my-5 d-none d-lg-inline-flex h3">Anuncie a sua vaga GRÁTIS!</h3>
                         <h3 className="my-5 d-lg-none d-block h4">Anuncie a sua vaga GRÁTIS!</h3>
                     </div>
-                    <Row className="justifity-content-center">
+                    <Row className="justifity-content-center my-4">
                         <Col>
-                            <Button variant={"light"} lg={3} className="rounded my-4 text-dark mx-2">Anunciar Vagas</Button>
-                            <Button variant={"light"} lg={3} className="rounded my-4 text-dark mx-2" href="/candidatas">Candidatas</Button>
+                            <Link to="/" lg={3} className="btn btn-info rounded mx-3">Anunciar Vagas</Link>
+                            <Link to="/candidatas" lg={3} className="btn btn-info rounded mx-3">Candidatas</Link>
                         </Col>
                     </Row>
                 </Container>

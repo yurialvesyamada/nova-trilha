@@ -4,6 +4,7 @@ import { Form, Col, InputGroup, FormControl, Button, Container, Row, Image } fro
 import './Pages.css';
 import { useSelector } from 'react-redux';
 import novatrilha from '../assets/img/nova-trilha-logo.png';
+import { Link } from 'react-router-dom';
 
 
 export default function Recuperar_login() {
@@ -40,7 +41,7 @@ export default function Recuperar_login() {
                                     <Button className="rounded w-100" type="submit" name="confirmarsenha" value="confirmar" variant="info">Recuperar</Button>{' '}
                                 </Col>
                                 <Col md={4} className="py-3 mx-auto">
-                                    <Button href="/login" className="rounded w-100" type="submit" name="cancelar" variant="outline-info">Voltar</Button>{' '}
+                                    <Link to="/login" className="btn btn-outline-info rounded w-100" type="submit" name="cancelar">Voltar</Link>{' '}
                                 </Col>
                             </div>
                         </Form>

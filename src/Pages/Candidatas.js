@@ -1,5 +1,6 @@
 import Candidate from '../Components/Candidaturas/Candidate';
 import { Container, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 export default function Candidatas() {
@@ -8,8 +9,7 @@ export default function Candidatas() {
             <Container className="text-center bg-light" fluid>
                 <h1 className="py-4">Candidaturas</h1>
                 <Candidate />
-
-                <Button variant={"info"} className="rounded my-4 mx-2" href="/company">Minhas Vagas</Button>
+                <Link to="/company" className="btn btn-info rounded my-4">Minhas Vagas</Link>
             </Container>
         </>
     )
