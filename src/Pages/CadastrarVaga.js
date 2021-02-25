@@ -1,5 +1,4 @@
 import { React } from 'react';
-import { useState, useEffect } from 'react';
 import { Form, Col, InputGroup, FormControl, Button, Container, Row, Image } from "react-bootstrap";
 import Erro from '../Components/Erro/Erro';
 import './Pages.css';
