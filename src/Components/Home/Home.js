@@ -2,10 +2,8 @@ import { Carousel, Image } from 'react-bootstrap';
 import horizonte from '../../assets/img/horizonte.jpg';
 import maos from '../../assets/img/3maos.jpg';
 import pes from '../../assets/img/pes.jpg';
+import teste from '../../assets/img/logoteste.jpg'
 import './Home.css';
-
-
-
 
 
 export default function Carrousel() {
@@ -17,7 +15,7 @@ export default function Carrousel() {
             <Carousel.Item interval={150000} >
                 <Image
                     className="d-block w-100"
-                    src={horizonte}
+                    src={teste}
                     alt="First slide" />
                 <Carousel.Caption className="justify-content-center d-none d-md-block color-dark p-2 rounded-pill">
                     <h1 className="h1">Diferencial</h1>

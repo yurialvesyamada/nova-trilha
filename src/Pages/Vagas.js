@@ -32,6 +32,8 @@ export default function Vagas(props) {
                             <Form.Control type="search" placeholder="Ex.: Recepcionista, Secretaria" className="d-lg-none d-inline-flex" />
                             <br />
                             <a href="#vagas" className="btn btn-light mx-auto my-5">Pesquisar</a>
+                            <br />
+                            <a href="/CadastrarVaga" className="btn btn-light mx-auto my-5">Cadastrar vaga</a>
                         </Form.Group>
                     </Form>
                 </Container>
@@ -45,7 +47,7 @@ export default function Vagas(props) {
                     <h1 id="vagas">Vagas Publicadas</h1>
                 </div>
                 <Row>
-                    {apiVagas && apiVagas.map(item => <Dados key={item.id} imagem={item.imagem} vaga={item.vaga} descricao={item.descricao} empregador={item.empregador} salario={item.salario} localizacao={item.localizacao}
+                    {apiVagas && apiVagas.map(item => <Dados key={item.id} /* imagem={item.imagem}  */vaga={item.vaga} descricao={item.descricao} empregador={item.empregador} salario={item.salario} localizacao={item.localizacao} 
                     />)}
                 </Row>
             </Container>
