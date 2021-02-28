@@ -50,7 +50,7 @@ export default function Login() {
                             </div>
                         </Form>
                         <h4 className="py-3 h4 links">
-                            <Link to="/recuperar-senha" className="border-bottom">Esqueci a Senha</Link>
+                            <Link to="/recuperar-senha">Esqueci a Senha</Link>
                         </h4>
                     </Col>
                 </Row>
