@@ -28,7 +28,7 @@ export default function Cadastro() {
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-user icon" title="Username"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
-                                <FormControl name="nome" type="name" id="inlineFormInputGroup" placeholder="Nome" required />
+                                <FormControl name="nome" type="name" id="inlineFormInputGroup" placeholder="Nome Completo" required />
                             </InputGroup>
 
                             <InputGroup className="pb-4">
@@ -85,7 +85,7 @@ export default function Cadastro() {
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-file-upload icon"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
-                                <FormControl name="curriculo" type="text" id="inlineFormInputGroup7" placeholder="Anexar Curriculo" disabled />
+                                <FormControl /* name="curriculo" */ type="text" id="inlineFormInputGroup7" placeholder="Anexar Curriculo" disabled />
                             </InputGroup>
 
                             <div>
