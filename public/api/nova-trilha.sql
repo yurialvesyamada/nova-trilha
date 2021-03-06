@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Tempo de geração: 21/02/2021 às 13:07
+-- Tempo de geração: 25/02/2021 às 14:31
 -- Versão do servidor: 8.0.23-0ubuntu0.20.04.1
 -- Versão do PHP: 7.4.3
 
@@ -81,7 +81,7 @@ CREATE TABLE `usuario` (
   `endereco` varchar(255) NOT NULL,
   `escolaridade` varchar(255) NOT NULL,
   `funcao` varchar(255) NOT NULL,
-  `id_cidade` int DEFAULT NULL,
+  `codigo_cidade` int DEFAULT NULL,
   `data` datetime DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -89,17 +89,9 @@ CREATE TABLE `usuario` (
 -- Despejando dados para a tabela `usuario`
 --
 
-INSERT INTO `usuario` (`id_user`, `nome`, `email`, `senha`, `telefone`, `endereco`, `escolaridade`, `funcao`, `id_cidade`, `data`) VALUES
-(1, 'josiel', 'josiel@teste', '123', '658468', 'são roque', 'ensino medio', 'programador', NULL, '2021-02-20 13:52:41'),
-(3, 'josiel', 'teste3@teste3', '12455', '6548', 'kbsdcas', '654654', '65464', NULL, '2021-02-20 16:20:57'),
-(4, 'josiel souza de jesus', 'maria@gmail.com', '123', '23525235', '', '', 'motorista', NULL, '2021-02-20 19:03:32'),
-(5, 'josiel', 'marcus@gmail', '123', '355568688', '', 'técnico', 'mecânico', NULL, '2021-02-20 19:12:53'),
-(7, 'carla', 'carla@gmail', '123', '165868', '', 'técnico', 'cabeleleira ', NULL, '2021-02-21 11:25:00'),
-(8, 'antonia', 'antonia@gmail.com', '123', '3535351', '', 'teste', 'teste', NULL, '2021-02-21 11:40:51'),
-(9, 'mateus', 'matheus@gmail.com', '123', '3486', '', 'teste', 'teste', NULL, '2021-02-21 11:46:26'),
-(10, 'teste44', 'teste44@gmail.com', '123', '38468', '', 'ensino médio', 'cabeleleira ', NULL, '2021-02-21 11:50:17'),
-(11, 'olx', 'olx@gmail.com', '123', '64688', '', 'hauisdw', 'isdhew', NULL, '2021-02-21 12:56:31'),
-(12, 'teste88', 'teste88@gmail.com', '123', '65486', '', 'uyguyyu', 'yufyufyufuyf', NULL, '2021-02-21 13:01:43');
+INSERT INTO `usuario` (`id_user`, `nome`, `email`, `senha`, `telefone`, `endereco`, `escolaridade`, `funcao`, `codigo_cidade`, `data`) VALUES
+(1, 'josiel souza de jesus', 'josielsouza.dj@gmail.com', '123', '1244141', '', 'E. Fundamental Completo', '65464', NULL, '2021-02-24 18:04:31'),
+(2, 'teste3', 'teste3@teste3', '123', '12314123', '', 'E. Superior Incompleto', '142424', NULL, '2021-02-24 18:07:00');
 
 -- --------------------------------------------------------
 
@@ -114,23 +106,22 @@ CREATE TABLE `vagas` (
   `empregador` varchar(120) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `localizacao` varchar(60) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `salario` varchar(11) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `imagem` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL
+  `imagem` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `fk_usuario` int DEFAULT NULL,
+  `fk_cidade` int DEFAULT NULL,
+  `fk_empresa` int DEFAULT NULL,
+  `data` datetime DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Despejando dados para a tabela `vagas`
 --
 
-INSERT INTO `vagas` (`id`, `vaga`, `descricao`, `empregador`, `localizacao`, `salario`, `imagem`) VALUES
-(1, 'Recepcionista', 'Área e especialização profissional: Administração - Recepção', 'Animalias Pet Center', 'São Paulo - SP', '1.500,00', 'logo_pet.png'),
-(2, 'Secretária', 'Secretária da clínica, irá executar todas as funções de recepcionista de uma clínica.', 'Animalias Pet Center', 'São Paulo - SP', '1.500,00', 'logo_pet.png'),
-(3, 'Cabelereira', 'Cabelereira com experiência ', 'Navalha Barbearia', 'São Paulo - SP', '1.100,00', 'logo_barbearia.png'),
-(4, 'Secretária', 'Auxiliar no atendimento aos clientes, preencher documentos e tabelar dados de cadastro ', 'Menezes Advogados', 'São Paulo - SP', '1.100,00', 'logo_advocacia.png'),
-(5, 'Ajudante Geral', 'Auxiliar na organização e limpeza\r\n\r\n', 'Silva & Santos ', 'São Paulo - SP', '1.100,00', 'logo_estudio.png'),
-(6, 'Controladora de Acesso', 'Será responsável pela fiscalização e guarda do patrimônio, além de controlar a entrada e saída de pessoas e veículos nas dependências da empresa, bem como orientar as pessoas sobre seus destinos.', 'Menezes Advogados', 'São Paulo - SP', '2.000,00', 'logo_advocacia.png'),
-(7, 'Secretária', 'Secretária da clínica, irá executar todas as funções de recepcionista de uma clínica.', 'Animalias Pet Center', 'São Paulo - SP', '1.500,00', 'logo_pet.png'),
-(8, 'Cabelereira', 'Cabelereira com experiência ', 'Navalha Barbearia', 'São Paulo - SP', '1.100,00', 'logo_barbearia.png'),
-(9, 'Secretária', 'Auxiliar no atendimento aos clientes, preencher documentos e tabelar dados de cadastro ', 'Menezes Advogados', 'São Paulo - SP', '1.600,00', 'logo_advocacia.png');
+INSERT INTO `vagas` (`id`, `vaga`, `descricao`, `empregador`, `localizacao`, `salario`, `imagem`, `fk_usuario`, `fk_cidade`, `fk_empresa`, `data`) VALUES
+(4, 'programador', 'desenvolvimento web', 'Itaú ', 'sp', '500000', NULL, NULL, NULL, NULL, '2021-02-24 19:48:50'),
+(3, 'motorista', 'dirigir', 'avatar', 'sp ', '333333', NULL, NULL, NULL, NULL, '2021-02-24 18:31:24'),
+(1, 'Recepcionista', 'Área e especialização profissional: Administração - Recepção', 'Animalias Pet Center', 'São Paulo - SP', '1.500,00', 'logo_pet.png', NULL, NULL, NULL, '2021-02-25 11:08:11'),
+(2, 'Secretária', 'Secretária da clínica, irá executar todas as funções de recepcionista de uma clínica.', 'Animalias Pet Center', 'São Paulo - SP', '1.500,00', 'logo_pet.png', NULL, NULL, NULL, '2021-02-25 11:08:11');
 
 --
 -- Índices de tabelas apagadas
@@ -140,13 +131,7 @@ INSERT INTO `vagas` (`id`, `vaga`, `descricao`, `empregador`, `localizacao`, `sa
 -- Índices de tabela `empresa`
 --
 ALTER TABLE `empresa`
-  ADD PRIMARY KEY (`id_empresa`);
-
---
--- Índices de tabela `tb_cidade`
---
-ALTER TABLE `tb_cidade`
-  ADD PRIMARY KEY (`id_cidade`);
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- Índices de tabela `usuario`
@@ -159,35 +144,26 @@ ALTER TABLE `usuario`
 -- Índices de tabela `vagas`
 --
 ALTER TABLE `vagas`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_usuario` (`fk_usuario`),
+  ADD KEY `fk_cidade` (`fk_cidade`),
+  ADD KEY `fk_empresa` (`fk_empresa`);
 
 --
 -- AUTO_INCREMENT de tabelas apagadas
 --
 
 --
--- AUTO_INCREMENT de tabela `empresa`
---
-ALTER TABLE `empresa`
-  MODIFY `id_empresa` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT de tabela `tb_cidade`
---
-ALTER TABLE `tb_cidade`
-  MODIFY `id_cidade` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_user` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_user` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `vagas`
 --
 ALTER TABLE `vagas`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
