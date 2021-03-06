@@ -28,7 +28,7 @@ export default function Cadastro() {
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="fas fa-user icon" title="Username"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
-                                <FormControl name="nome" type="name" id="inlineFormInputGroup" placeholder="Nome" required />
+                                <FormControl name="nome" type="name" id="inlineFormInputGroup" placeholder="Nome Completo" required />
                             </InputGroup>
 
                             <InputGroup className="pb-4">
