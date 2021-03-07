@@ -94,9 +94,9 @@ export default function Cadastro() {
                                 </Col>
                             </div>
                         </Form>
-                        <div className="py-3 h4 links text-light">
+                        <div className="py-3 h4 text-light">
                             <h4>Já tem Cadastro?
-                                <Link to="/login" className="border-bottom"> Entre aqui.</Link>
+                                <Link to="/login" className="links"> Entre aqui.</Link>
                             </h4>
                         </div>
                     </Col>

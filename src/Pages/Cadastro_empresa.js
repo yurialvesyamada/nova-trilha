@@ -13,7 +13,7 @@ export default function Cadastro_empresa() {
     return (
         <>
             <Erro />
-            <Container className="text-center text-dark links" fluid>
+            <Container className="text-center text-dark" fluid>
                 <Row className="background py-5">
                     <Col md={6} lg={6} className="mx-auto rounded">
                         <Col className="mx-auto my-5" sm={12} md={6} lg={6}>
@@ -24,7 +24,6 @@ export default function Cadastro_empresa() {
 
 
                         <Form className="px-md-5" method="POST" action={caminho + "/api/Cadastro_empresa.php"}>
-                            {/* <h1 className="py-4 h1 text-info">Cadastrar Empresa</h1> */}
                             <InputGroup className="pb-4">
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="icon fas fa-user" title="Username"></i></InputGroup.Text>
@@ -80,9 +79,9 @@ export default function Cadastro_empresa() {
                                 </Col>
                             </div>
                         </Form>
-                        <div className="py-3 h4 links text-light">
+                        <div className="py-3 h4 text-light">
                             <h4>Já tem Cadastro?
-                                <Link to="/login" className="border-bottom"> Entre aqui.</Link>
+                                <Link to="/login" className="links"> Entre aqui.</Link>
                             </h4>
                         </div>
                     </Col>

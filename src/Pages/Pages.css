@@ -13,9 +13,10 @@ body {
     background-size: cover;
 }
 
-.links a {
+.links {
     color: white;
     font-family: 'Times New Roman', Times, serif;
+
 }
 
 html {
@@ -38,3 +39,4 @@ html {
 .fonts {
     font-family: 'Times New Roman', Times, serif;
 }
+
