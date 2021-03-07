@@ -4,6 +4,8 @@ import './Pages.css';
 import Dados from '../Components/Vagas/Dados';
 import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import { Link, withRouter } from 'react-router-dom';
+
 
 export default function Vagas(props) {
     const caminho = useSelector(state => state.caminho.caminho)
@@ -33,7 +35,7 @@ export default function Vagas(props) {
                             <br />
                             <a href="#vagas" className="btn btn-light mx-auto my-5">Pesquisar</a>
                             <br />
-                            <a href="/cadastrar-vaga" className="btn btn-info mx-auto my-5">Cadastrar vaga</a>
+                            <Link to="/cadastrar-vaga" className="btn btn-info mx-auto my-5">Cadastrar vaga</Link>
                         </Form.Group>
                     </Form>
                 </Container>
