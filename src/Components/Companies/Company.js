@@ -20,7 +20,7 @@ export default function CadastroVaga(props) {
     return (
         <>
             <Card className="mx-auto shadow-sm rounded my-4" style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={require(`../Vagas/empresas-img/${props.imagem}`).default} alt="Empresas Contratantes" className="w-100 border-bottom" title={props.empregador} />
+                {/* <Card.Img variant="top" src={require(`../Vagas/empresas-img/${props.imagem}`).default} alt="Empresas Contratantes" className="w-100 border-bottom" title={props.empregador} /> */}
                 <Card.Body className="d-flex flex-column mt-auto">
                     <Card.Title className="py-3">
                         <span className="h3 font-weight-bold">{props.vaga}</span>

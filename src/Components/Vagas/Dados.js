@@ -21,7 +21,7 @@ export default function Dados(props) {
 
     return (
         <>
-            <Card className="mx-auto shadow-sm rounded my-4" style={{ width: '22rem' }}>
+            <Card className="mx-auto shadow-sm rounded my-4" style={{ width: '24rem' }}>
                 {/* <Card.Img variant="top" src={require(`./empresas-img/${props.imagem}`).default} alt="Empresas Contratantes" className="w-100" /> */}
                 <Card.Header className="py-4">
                     <Card.Title>

@@ -44,7 +44,7 @@ function Footer() {
                 <Link to="cadastro">Cadastre-se</Link>
               </li>
               <li>
-                <Link to="/company">Para Empresas</Link>
+                <Link to="/empresas">Para Empresas</Link>
               </li>
             </ul>
           </Col>

@@ -26,7 +26,7 @@ export default function Routes() {
             <Route exact path="/Parceiros" component={Parceiros} />
             <Route exact path="/Deletar_usuario" component={Deletar_usuario} />
             <Route exact path="/Atualizar_cadastro" component={Atualizar_cadastro} />
-            <Route exact path="/Company" component={Empresas} />
+            <Route exact path="/empresas" component={Empresas} />
             <Route exatc path="/Candidatas" component={Candidatas} />
             <Route exatc path="/Cadastro_empresa" component={Cadastro_empresa} />
             <Route exatc path="/privacidade" component={Privacidade} />

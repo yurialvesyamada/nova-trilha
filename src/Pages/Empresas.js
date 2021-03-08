@@ -31,7 +31,7 @@ export default function Empresas() {
                     </div>
                     <Row className="justifity-content-center my-4">
                         <Col>
-                            <Link to="/" lg={3} className="btn btn-info rounded mx-3">Anunciar Vagas</Link>
+                            <Link to="/cadastrar-vaga" lg={3} className="btn btn-info rounded mx-3">Anunciar Vagas</Link>
                             <Link to="/candidatas" lg={3} className="btn btn-info rounded mx-3">Candidatas</Link>
                         </Col>
                     </Row>

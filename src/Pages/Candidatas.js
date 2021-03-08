@@ -9,7 +9,7 @@ export default function Candidatas() {
             <Container className="text-center bg-light" fluid>
                 <h1 className="py-4">Candidaturas</h1>
                 <Candidate />
-                <Link to="/company" className="btn btn-info rounded my-4">Minhas Vagas</Link>
+                <Link to="/empresas" className="btn btn-info rounded my-4">Minhas Vagas</Link>
             </Container>
         </>
     )
