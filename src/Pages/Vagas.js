@@ -49,7 +49,7 @@ export default function Vagas(props) {
                     <h1 id="vagas">Vagas Publicadas</h1>
                 </div>
                 <Row>
-                    {apiVagas && apiVagas.map(item => <Dados key={item.id} imagem={item.imagem} vaga={item.vaga} descricao={item.descricao} empregador={item.empregador} salario={item.salario} localizacao={item.localizacao}
+                    {apiVagas && apiVagas.map(item => <Dados key={item.id} /* imagem={item.imagem} */ vaga={item.vaga} descricao={item.descricao} empregador={item.empregador} salario={item.salario} localizacao={item.localizacao}
                     />)}
                 </Row>
             </Container>

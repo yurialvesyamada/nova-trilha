@@ -30,7 +30,7 @@ export default function Routes() {
             <Route exatc path="/Candidatas" component={Candidatas} />
             <Route exatc path="/Cadastro_empresa" component={Cadastro_empresa} />
             <Route exatc path="/privacidade" component={Privacidade} />
-            <Route exatc path="/termos" component={Termos} />        
+            <Route exatc path="/termos" component={Termos} />
             <Route exatc path="/cadastrar-vaga" component={CadastrarVaga} />
         </Switch>
     );

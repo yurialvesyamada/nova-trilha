@@ -60,7 +60,7 @@ export default function CadastrarVaga() {
                                 <InputGroup.Prepend>
                                     <InputGroup.Text><i className="icon fas fa-dollar-sign"></i></InputGroup.Text>
                                 </InputGroup.Prepend>
-                                <FormControl name="salario" type="number" minLength="1" maxLength="12" id="inlineFormInputGroup6" placeholder="Salário" required />
+                                <FormControl name="salario" type="number" id="inlineFormInputGroup6" placeholder="Salário" required />
                             </InputGroup>
 
 

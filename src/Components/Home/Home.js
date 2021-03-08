@@ -2,7 +2,6 @@ import { Carousel, Image } from 'react-bootstrap';
 import saopaulo from '../../assets/img/saopaulo.jpg';
 import maos from '../../assets/img/3maos.jpg';
 import pes from '../../assets/img/pes.jpg';
-import teste from '../../assets/img/logoteste.jpg'
 import './Home.css';
 import { Link } from 'react-router-dom';
 
